@@ -1,7 +1,6 @@
 # Week 1 Recap
 
 ## Day 1
-* Control Flow Statements
 * Introduction to Java
 * JDK, JRE, JVM
 * Hello World (without IDE)

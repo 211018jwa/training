@@ -83,6 +83,17 @@ public class Application {
 	// Summary: If we want to both write and run Java programs, we should install a JDK (because it has
 	//			a compiler). If we only want to run Java programs, we should install a JRE.
 	
+	/*
+	*	Java Naming Conventions
+	*/
+
+	// Classes: Class names should be nouns with the first letter of each word	
+	//		capitalized. (ex. public class SodaCan)
+	// Methods: verbs, mixed case with the first letter lowercase, and every
+	//		subsequent word's first letter capitalized (ex. public static void makeALotOfNoise() {})
+	// Variables: nouns, but same naming convention as methods (ex. int numberOfLegs = 10;)
+	// Project names: snake case (all lower case with hyphens between words) (ex. my-first-project)
+	
 	
 	public static void main(String[] args) {
 		System.out.println("Hello world!");
