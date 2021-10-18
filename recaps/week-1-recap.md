@@ -1,6 +1,11 @@
 # Week 1 Recap
 
 ## Day 1
+* Environment Setup
+    - Git Bash installation
+    - JDK Installation
+    - Spring Tool Suite Integrated Development Environment (IDE) setup
+        - Configuring JRE to be utilized with the STS IDE
 * Introduction to Java [link](https://github.com/211018jwa/training/blob/main/week-1/day-1/hello-world/src/Application.java#L5)
 * JDK, JRE, JVM [link](https://github.com/211018jwa/training/blob/main/week-1/day-1/hello-world/src/Application.java#L63)
 * Hello World (without IDE) [link](https://github.com/211018jwa/training/tree/main/week-1/day-1/hello-world-without-ide)
