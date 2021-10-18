@@ -1,11 +1,11 @@
 # Week 1 Recap
 
 ## Day 1
-* Introduction to Java
-* JDK, JRE, JVM
+* Introduction to Java [link](https://github.com/211018jwa/training/blob/main/week-1/day-1/hello-world/src/Application.java#L5)
+* JDK, JRE, JVM [link](https://github.com/211018jwa/training/blob/main/week-1/day-1/hello-world/src/Application.java#L63)
 * Hello World (without IDE)
-* Hello World (with IDE)
-* Java Naming Conventions
+* Hello World (with IDE) [link](https://github.com/211018jwa/training/tree/main/week-1/day-1/hello-world)
+* Java Naming Conventions [link](https://github.com/211018jwa/training/blob/main/week-1/day-1/hello-world/src/Application.java#L87)
 
 # Question Practice
 1. What types of control flow are there in Java?
