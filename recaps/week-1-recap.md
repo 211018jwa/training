@@ -13,10 +13,12 @@
 * Java Naming Conventions [link](https://github.com/211018jwa/training/blob/main/week-1/day-1/hello-world/src/Application.java#L87)
 
 # Question Practice
-1. What types of control flow are there in Java?
-2. What is Java?
-3. What are the benefits of Java?
-4. What is the difference between the JDK, JRE, and JVM?
-5. In order to run a Java program, what needs to happen first?
-6. What is an IDE?
-7. What naming convention does Java utilize?
+* What is Java?
+* What are the benefits of Java?
+* What is the difference between the JDK, JRE, and JVM?
+* In order to run a Java program, what needs to happen first?
+* What is the significance of the main method?
+* What is an IDE?
+* What naming conventions does Java utilize?
+* How can I write a Java application without an IDE such as Spring Tool Suite?
+* What is Bash?
