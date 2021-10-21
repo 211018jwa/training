@@ -153,3 +153,31 @@
 * Can a static method access an instance variable directly?
 * Can an instance method access an instance variable directly?
 * What are the variable scopes in Java?
+---
+* What is Git?
+* What is a local git repository?
+* What is a remote git repository?
+* What is the difference between Git and Github?
+* What are some of the other popular repository hosting websites besides Github?
+* What is the purpose of configuring the SSH keys for Github and Git Bash?
+* Whenever we make changes to files or add/remove files from our local repository, what commands are needed to actually upload these changes to the remote repository?
+* What arithmetic operators are there?
+* What is numeric promotion?
+* What are the assignment operators?
+* What are the comparison operators?
+* What are the logical operators?
+* What does short-circuiting mean with the logical operators? Which are the short-circuiting operators?
+* What two high level types of casting are there?
+* Why does a narrowing conversion need to be explicit?
+* Why does a widening conversion not need to be explicit?
+* What is the difference between upcasting and downcasting?
+* What is an example of downcasting?
+* Why does downcasting need to be explicit?
+* What datatypes can a switch statement use?
+* What is the difference between a while loop and do-while loop?
+* Write a for loop that prints numbers from 0 to 100 (inclusive), increasing
+* Write a while loop that prints numbers from 500 to 250 (inclusive), decreasing
+* Can arrays change in size?
+* What is the syntax to instantiate an array?
+* How are object arrays different than primitive arrays in memory?
+* What is the for-each loop (enhanced for loop)?
