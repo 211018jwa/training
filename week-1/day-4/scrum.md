@@ -20,7 +20,7 @@ A Sprint is fundamentally the most important part of Scrum. It is where ideas ar
 Sprint characteristics:
 - Should be fixed in length ranging from 1 to 4 weeks (2 weeks is typical)
 - The product backlog is the input to a Sprint
-- A protentially shippable increment is the output for a Sprint
+- A potentially shippable increment is the output for a Sprint
 
 # Scrum Artifacts
 Scrum artifacts are used to help manage work and progress that needs to be made. There are three artifacts:
