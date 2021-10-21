@@ -64,6 +64,56 @@
     - [link to method scope example](https://github.com/211018jwa/training/blob/main/week-1/day-2/static-v-nonstatic/src/com/revature/app/Main.java#L57)
     - [link to block scope example](https://github.com/211018jwa/training/blob/main/week-1/day-2/static-v-nonstatic/src/com/revature/app/Main.java#L64-L66)
 
+## Day 3
+* Git and Github
+    - [link to ssh keys setup guide](https://github.com/211018jwa/training/blob/main/week-1/day-3/github-ssh/ssh-key.md)
+    - [link to git cheatsheet](https://i.redd.it/8341g68g1v7y.png)
+* Operators
+    - Arithmetic Operators
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-3/operators/src/com/revature/app/Driver.java#L6-L44)
+        - Numeric Promotion
+            - [link to notes and example](https://github.com/211018jwa/training/blob/main/week-1/day-3/operators/src/com/revature/app/Driver.java#L46-L66)
+    - Assignment Operators
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-3/operators/src/com/revature/app/Driver.java#L68-L84)
+    - Comparison Operators
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-3/operators/src/com/revature/app/Driver.java#L86-L105)
+    - Logical Operators
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-3/operators/src/com/revature/app/Driver.java#L107-L171)
+* Casting
+    - [link to general notes](https://github.com/211018jwa/training/blob/main/week-1/day-3/casting/src/com/revature/app/Application.java#L11-L21)
+    - Primitive type casting (widening and narrowing conversion)
+        - [link to demo](https://github.com/211018jwa/training/blob/main/week-1/day-3/casting/src/com/revature/app/Application.java#L23-L52)
+    - Reference type casting (upcasting and downcasting)
+        - [link to demo](https://github.com/211018jwa/training/blob/main/week-1/day-3/casting/src/com/revature/app/Application.java#L55-L83)
+        - [link to reference casting memory diagram](https://github.com/211018jwa/training/blob/main/week-1/day-3/casting-memory-diagram.pdf)
+* Control Flow
+    - if statement
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-3/control-flow/src/com/revature/app/SodaCan.java#L24-L28)
+    - if-else statement
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-3/control-flow/src/com/revature/app/SodaCan.java#L30-L55)
+    - if statement nesting
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-3/control-flow/src/com/revature/app/SodaCan.java#L57-L75)
+    - switch statements
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-3/control-flow/src/com/revature/app/SodaCan.java#L77-L102)
+    - for loops
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-3/control-flow/src/com/revature/app/SodaCan.java#L112-L126)
+    - while loops
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-3/control-flow/src/com/revature/app/SodaCan.java#L128-L133)
+    - do while loop
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-3/control-flow/src/com/revature/app/SodaCan.java#L135-L141)
+    - `break` and `continue` keywords
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-3/control-flow/src/com/revature/app/SodaCan.java#L143-L165)
+* Primitive Arrays
+    - [link to basic example](https://github.com/211018jwa/training/blob/main/week-1/day-3/arrays/src/com/revature/app/Main.java#L7-L40)
+* Object Arrays
+    - [link to example](https://github.com/211018jwa/training/blob/main/week-1/day-3/arrays/src/com/revature/app/Main.java#L74-L80)
+* Arrays in Memory
+    - [link to diagram](https://github.com/211018jwa/training/blob/main/week-1/day-3/string-array-memory-diagram.pdf)
+* Multi-dimensional arrays
+    - [link to example](https://github.com/211018jwa/training/blob/main/week-1/day-3/arrays/src/com/revature/app/Main.java#L82-L96)
+* for-each loop (enhanced for loop)
+    - [link](https://github.com/211018jwa/training/blob/main/week-1/day-3/arrays/src/com/revature/app/Main.java#L63-L67)
+
 # Question Practice
 * What is Java?
 * What are the benefits of Java?
