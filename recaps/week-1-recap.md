@@ -114,6 +114,88 @@
 * for-each loop (enhanced for loop)
     - [link](https://github.com/211018jwa/training/blob/main/week-1/day-3/arrays/src/com/revature/app/Main.java#L63-L67)
 
+# Day 4
+* Var-args (variable arguments)
+    - [link](https://github.com/211018jwa/training/blob/main/week-1/day-4/var-args/src/com/revature/app/Main.java#L21-L39)
+* Software Development Lifecycle
+    - SDLC Phases
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-4/SDLC.md#sdlc-phases)
+    - Philosophies
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-4/SDLC.md#conclusion)
+* Waterfall
+    - [diagram image](https://camo.githubusercontent.com/2729c57da50599a8145174f3244d86832fd11da5101dd910050d45de01e6470e/68747470733a2f2f73702d616f2e73686f7274706978656c2e61692f636c69656e742f746f5f776562702c715f676c6f7373792c7265745f696d672c775f313134382f68747470733a2f2f746563686b616c747572652e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032312f30392f776174657266616c6c2e706e67)
+    - Characteristics
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-4/waterfall.md#waterfall-characteristics)
+    - Pros and Cons
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-4/waterfall.md#pros-and-cons)
+    - When to use waterfall
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-4/waterfall.md#where-waterfall-is-suitable)
+* Agile
+    - [diagram image](https://github.com/211018jwa/training/raw/main/week-1/day-4/agile-diagram.png)
+    - Core Values
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-4/agile.md#agile-manifesto-4-core-values)
+    - 12 Principles
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-4/agile.md#agile-manifesto-12-principles)
+    - Agile Methodologies/Frameworks
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-4/agile.md#agile-methodologies--frameworks)
+* Scrum
+    - [diagram image](https://github.com/211018jwa/training/raw/main/week-1/day-4/scrum-diagram.png)
+    - Sprint
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-4/scrum.md#sprint)
+    - Scrum Artifacts
+        - Product Backlog
+        - Sprint Backlog
+        - Usable Product Increment
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-4/scrum.md#scrum-artifacts)
+    - User Story
+        - [link to overview](https://github.com/211018jwa/training/blob/main/week-1/day-4/scrum.md#user-story)
+        - Acceptance Criteria
+            - [link](https://github.com/211018jwa/training/blob/main/week-1/day-4/scrum.md#acceptance-criteria)
+        - Definition of Done
+            - [link](https://github.com/211018jwa/training/blob/main/week-1/day-4/scrum.md#definition-of-done)
+        - Story Pointing
+            - [link](https://github.com/211018jwa/training/blob/main/week-1/day-4/scrum.md#story-pointing)
+        - Burndown Chart
+            - [link](https://github.com/211018jwa/training/blob/main/week-1/day-4/scrum.md#burndown-chart)
+    - Scrum Roles
+        - Scrum Master
+        - Product Owner / Product Manager
+        - Development Team
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-4/scrum.md#scrum-roles)
+    - Scrum Team
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-4/scrum.md#scrum-team)
+    - Scrum Ceremonies
+        - Sprint Planning Meeting
+        - Daily Standup Meeting
+        - Sprint Review Meeting
+        - Sprint Retrospective Meeting
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-4/scrum.md#scrum-ceremonies)
+* Java 8 Documentation
+    - [link](https://docs.oracle.com/javase/8/docs/api/)
+* String API
+    - [link to demo](https://github.com/211018jwa/training/blob/main/week-1/day-4/string-api/src/com/revature/app/Driver.java#L5-L73)
+    - String Pool
+        - [link to diagram](https://github.com/211018jwa/training/blob/main/week-1/day-4/string-pool-diagram.pdf)
+* Maven
+    - [link to notes](https://github.com/211018jwa/training/blob/main/week-1/day-4/maven.md)
+    - Project Coordinates
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-4/maven.md#maven-project-coordinates)
+    - Project Object Model
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-4/maven.md#pom---project-object-model)
+    - Example POM
+        - [link](https://github.com/211018jwa/training/blob/main/week-1/day-4/my-calculator-app/pom.xml#L1-L32)
+* Javalin
+    - [link to demo project](https://github.com/211018jwa/training/tree/main/week-1/day-4/my-calculator-app)
+        - Starting up our server
+            - [link](https://github.com/211018jwa/training/blob/main/week-1/day-4/my-calculator-app/src/main/java/com/revature/app/Application.java#L10-L21)
+* Three-tiered Architecture
+    - Controller layer
+        - [example](https://github.com/211018jwa/training/blob/main/week-1/day-4/my-calculator-app/src/main/java/com/revature/controller/ArithmeticController.java#L11-L39)
+    - Service layer
+        - [example](https://github.com/211018jwa/training/blob/main/week-1/day-4/my-calculator-app/src/main/java/com/revature/service/ArithmeticService.java#L10-L23)
+    - Data Access layer
+        - Not yet utilized since we have not covered databases yet
+
 # Question Practice
 * What is Java?
 * What are the benefits of Java?
