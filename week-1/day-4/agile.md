@@ -1,7 +1,7 @@
 # Agile
 
 ## Background
-![agile diagram](./agile-diagram.PNG)
+![agile diagram](./agile-diagram.png)
 
 In the 1990s, a small group of thought leaders got together and developed a new philosophy called Agile.
 
