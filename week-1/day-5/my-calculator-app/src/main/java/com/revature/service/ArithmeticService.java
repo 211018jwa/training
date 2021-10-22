@@ -19,5 +19,38 @@ public class ArithmeticService {
 		
 		return result;
 	}
+
+	public String doSubtraction(String number1String, String number2String) {
+		double number1 = Double.parseDouble(number1String);
+		double number2 = Double.parseDouble(number2String);
+		
+		double difference = number1 - number2;
+		
+		String result = "" + difference; // Convert from double representation of a number to a String representation
+		
+		return result;
+	}
+
+	public String doMultiplication(String number1String, String number2String) {
+		double number1 = Double.parseDouble(number1String);
+		double number2 = Double.parseDouble(number2String);
+		
+		double product = number1 * number2;
+		
+		String result = "" + product; // Convert from double representation of a number to a String representation
+		
+		return result;
+	}
+
+	public String doDivision(String number1String, String number2String) {
+		double number1 = Double.parseDouble(number1String);
+		double number2 = Double.parseDouble(number2String);
+		
+		double quotient = number1 / number2;
+		
+		String result = "" + quotient; // Convert from double representation of a number to a String representation
+		
+		return result;
+	}
 	
 }
