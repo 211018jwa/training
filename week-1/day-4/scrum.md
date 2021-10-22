@@ -1,7 +1,7 @@
 # Scrum
 
 ## Background
-![scrum diagram](./scrum-diagram.PNG)
+![scrum diagram](./scrum-diagram.png)
 
 Scrum is an agile framework. In other words, it is a defined process with actionable steps to be Agile. Borrowing terminology from OOP, Agile is abstract, while Scrum is a concrete implementation of Agile.
 
@@ -124,7 +124,7 @@ Story points could be
 - etc.
 
 ## Burndown chart
-![burndown chart](./burndown-chart.PNG)
+![burndown chart](./burndown-chart.png)
 
 - Used to track progress of a sprint
 - All of the user stories' story points are added up in the Sprint backlog
