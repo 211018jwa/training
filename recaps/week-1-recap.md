@@ -263,3 +263,50 @@
 * What is the syntax to instantiate an array?
 * How are object arrays different than primitive arrays in memory?
 * What is the for-each loop (enhanced for loop)?
+---
+* What is var-args?
+* Can we have multiple var-args parameters for one method?
+* Where does the var-args parameter need to go within the parameters?
+* What type of variable is the var-args parameter, reference or primitive?
+* What is the software development lifecycle?
+* What are the 7 phases of the software development lifecycle?
+* What two competing philosophies do we have?
+* What is waterfall and its characteristics?
+* What are the pros and cons of waterfall?
+* When might we use waterfall?
+* What is Agile?
+* What are the core values of Agile?
+* What are the 12 principles of Agile?
+* What are some examples of Agile frameworks/methodologies?
+* What is Scrum?
+* What is a Sprint?
+* What are the Scrum artifacts?
+* What is a product backlog?
+* Who is in charge of managing the product backlog?
+* What is the Sprint backlog?
+* How is it decided what items/user stories are included in the Sprint backlog?
+* What is a usable product increment?
+* What are user stories?
+* What is "Acceptance Criteria"?
+* What is the "Definition of Done"?
+* What is "Story Pointing"?
+* What is a burndown chart?
+* What Scrum roles are there?
+* What is the role of a Scrum Master?
+* What is the role of the product owner?
+* How large should a Scrum team be?
+* What Scrum ceremonies are there?
+* What questions should be answered by each team member during the daily standup meeting?
+* What is the difference between the Sprint Review and Sprint Retrospective meeting?
+* What is the purpose of the Java 8 Documentation? What is it actually documenting?
+* What is the String pool?
+* What are some common String methods?
+* What is Maven?
+* How do we include dependencies / external libraries into a Maven project?
+* What is the purpose of the pom.xml file?
+* What are the Maven project coordinates?
+* What is Javalin?
+* What are the three layers in three-tiered architecture?
+* What is the purpose of the controller layer?
+* What is the purpose of the service layer?
+* What is the purpose of the data access layer?
