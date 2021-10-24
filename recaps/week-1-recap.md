@@ -324,3 +324,9 @@
 * What is the purpose of the controller layer?
 * What is the purpose of the service layer?
 * What is the purpose of the data access layer?
+---
+* What three primary actions does a web browser perform?
+* What is HTML?
+* With regards to HTML, what is an attribute?
+* What is the difference between HTML, CSS, and JavaScript?
+* Where would we store our frontend files if we wanted to host it from our Javalin-based application?
