@@ -196,6 +196,20 @@
     - Data Access layer
         - Not yet utilized since we have not covered databases yet
 
+# Day 5
+* Web browser fundamentals
+    - [link](https://github.com/211018jwa/training/blob/main/week-1/day-5/browser.md#web-browser)
+* Intro to HTML
+    - [link](https://github.com/211018jwa/training/blob/main/week-1/day-5/browser.md#html)
+* HTML v. CSS v. JavaScript
+    - [link](https://github.com/211018jwa/training/blob/main/week-1/day-5/browser.md#html-v-css-v-javascript)
+* Calculator Backend Application
+    - [link](https://github.com/211018jwa/training/tree/main/week-1/day-5/my-calculator-app)
+* Static file hosting
+    - [link to static file location](https://github.com/211018jwa/training/tree/main/week-1/day-5/my-calculator-app/src/main/resources)
+    - [link to code to setup static file hosting](https://github.com/211018jwa/training/blob/main/week-1/day-5/my-calculator-app/src/main/java/com/revature/app/Application.java#L14)
+    - [link to diagram](https://github.com/211018jwa/training/blob/main/week-1/day-5/static-file-diagram.pdf)
+
 # Question Practice
 * What is Java?
 * What are the benefits of Java?
