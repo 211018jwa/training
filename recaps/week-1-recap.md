@@ -331,7 +331,9 @@
 * What is HTML?
 * With regards to HTML, what is an attribute?
 * What is the difference between HTML, CSS, and JavaScript?
-* Where would we store our frontend files if we wanted to host it from our Javalin-based application?
+* Where would we store our frontend files if we wanted to host them from our Javalin-based application?
 * What is Selenium?
 * How do we set up Selenium in order to go to Google.com?
-* What locators do we have?
+* What Selenium locators do we have?
+* What method in Selenium allows us to type text into an element?
+* What method in Selenium allows us to click an element?
