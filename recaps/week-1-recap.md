@@ -195,6 +195,8 @@
         - [example](https://github.com/211018jwa/training/blob/main/week-1/day-4/my-calculator-app/src/main/java/com/revature/service/ArithmeticService.java#L10-L23)
     - Data Access layer
         - Not yet utilized since we have not covered databases yet
+* Selenium
+    - [powerpoint](https://github.com/211018jwa/training/blob/main/week-1/day-5/selenium.pdf)
 
 # Day 5
 * Web browser fundamentals
@@ -330,3 +332,6 @@
 * With regards to HTML, what is an attribute?
 * What is the difference between HTML, CSS, and JavaScript?
 * Where would we store our frontend files if we wanted to host it from our Javalin-based application?
+* What is Selenium?
+* How do we set up Selenium in order to go to Google.com?
+* What locators do we have?
