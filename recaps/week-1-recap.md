@@ -114,7 +114,7 @@
 * for-each loop (enhanced for loop)
     - [link](https://github.com/211018jwa/training/blob/main/week-1/day-3/arrays/src/com/revature/app/Main.java#L63-L67)
 
-# Day 4
+## Day 4
 * Var-args (variable arguments)
     - [link](https://github.com/211018jwa/training/blob/main/week-1/day-4/var-args/src/com/revature/app/Main.java#L21-L39)
 * Software Development Lifecycle
@@ -198,7 +198,7 @@
 * Selenium
     - [powerpoint](https://github.com/211018jwa/training/blob/main/week-1/day-5/selenium.pdf)
 
-# Day 5
+## Day 5
 * Web browser fundamentals
     - [link](https://github.com/211018jwa/training/blob/main/week-1/day-5/browser.md#web-browser)
 * Intro to HTML
