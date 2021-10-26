@@ -195,8 +195,6 @@
         - [example](https://github.com/211018jwa/training/blob/main/week-1/day-4/my-calculator-app/src/main/java/com/revature/service/ArithmeticService.java#L10-L23)
     - Data Access layer
         - Not yet utilized since we have not covered databases yet
-* Selenium
-    - [powerpoint](https://github.com/211018jwa/training/blob/main/week-1/day-5/selenium.pdf)
 
 ## Day 5
 * Web browser fundamentals
@@ -211,6 +209,9 @@
     - [link to static file location](https://github.com/211018jwa/training/tree/main/week-1/day-5/my-calculator-app/src/main/resources)
     - [link to code to setup static file hosting](https://github.com/211018jwa/training/blob/main/week-1/day-5/my-calculator-app/src/main/java/com/revature/app/Application.java#L14)
     - [link to diagram](https://github.com/211018jwa/training/blob/main/week-1/day-5/static-file-diagram.pdf)
+* Selenium
+    - [link to demo](https://github.com/211018jwa/training/blob/main/week-1/day-5/selenium-demo/src/main/java/com/revature/app/Main.java)
+    - [powerpoint](https://github.com/211018jwa/training/blob/main/week-1/day-5/selenium.pdf)
 
 # Question Practice
 * What is Java?
