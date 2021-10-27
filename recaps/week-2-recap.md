@@ -1,7 +1,7 @@
 # Week 2 Recap
 
 ## Day 1
-### [Link to Day 1 powerpoint](https://github.com/211018jwa/training/blob/main/week-2/powerpoint.pdf)
+### [Link to Day 1 powerpoint](https://github.com/211018jwa/training/blob/main/week-2/day-1/powerpoint.pdf)
 
 * Inheritance
     - [link to examples](https://github.com/211018jwa/training/tree/main/week-2/day-1/inheritance-demo/src/com/revature/model)
