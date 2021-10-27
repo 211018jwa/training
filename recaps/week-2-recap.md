@@ -38,3 +38,4 @@
 * If we do not override the equals() method, how does its implementation in the Object class work?
 * What is the purpose of overriding the toString() method?
 * If we do not override the toString() method, what does it do by default?
+* When overriding the equals() method, why do we also need to override the hashCode() method?
