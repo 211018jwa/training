@@ -21,6 +21,42 @@
 * Downcasting refresher
     - [link](https://github.com/211018jwa/training/blob/main/week-2/day-1/inheritance-demo/src/com/revature/app/Application.java#L36-L59)
 
+## Day 2
+* Access Modifiers
+    - public
+    - protected
+    - default
+    - private
+    - [link to powerpoint notes](https://github.com/211018jwa/training/blob/main/week-2/day-2/access-modifiers-and-encapsulation.pdf)
+* Encapsulation
+    - [link to encapsulation demo project](https://github.com/211018jwa/training/tree/main/week-2/day-2/encapsulation-demo)
+        - Passing Person data around
+            - data -> Service layer -> Data access layer
+        - [link to person class](https://github.com/211018jwa/training/blob/main/week-2/day-2/encapsulation-demo/src/com/revature/model/Person.java#L15-L80)
+    - [link to powerpoint notes](https://github.com/211018jwa/training/blob/main/week-2/day-2/access-modifiers-and-encapsulation.pdf)
+* Java Bean
+    - [private properties](https://github.com/211018jwa/training/blob/main/week-2/day-2/encapsulation-demo/src/com/revature/model/Person.java#L17-L20)
+    - [No-args constructor](https://github.com/211018jwa/training/blob/main/week-2/day-2/encapsulation-demo/src/com/revature/model/Person.java#L22-L25)
+    - [Getters and Setters](https://github.com/211018jwa/training/blob/main/week-2/day-2/encapsulation-demo/src/com/revature/model/Person.java#L35-L80)
+* Non-access Modifiers
+    - [general notes](https://github.com/211018jwa/training/blob/main/week-2/day-2/non-access-modifiers/src/com/revature/app/Application.java#L5-L18)
+    - final keyword
+        - [variable example](https://github.com/211018jwa/training/blob/main/week-2/day-2/non-access-modifiers/src/com/revature/app/Application.java#L26-L30)
+        - [class example](https://github.com/211018jwa/training/blob/main/week-2/day-2/non-access-modifiers/src/com/revature/model/NonExtendableClass.java#L3)
+        - [method example](https://github.com/211018jwa/training/blob/main/week-2/day-2/non-access-modifiers/src/com/revature/model/Animal.java#L21-L23)
+    - static keyword
+    - abstract keyword
+* Abstraction
+    - [general notes](https://github.com/211018jwa/training/blob/main/week-2/day-2/abstraction/src/com/revature/model/Shape.java#L3-L11)
+    - Abstract class
+        - [abstract class Shape](https://github.com/211018jwa/training/blob/main/week-2/day-2/abstraction/src/com/revature/model/Shape.java#L13-L39)
+        - [concrete class Rectangle](https://github.com/211018jwa/training/blob/main/week-2/day-2/abstraction/src/com/revature/model/Rectangle.java)
+        - [concrete class Circle](https://github.com/211018jwa/training/blob/main/week-2/day-2/abstraction/src/com/revature/model/Circle.java)
+        - [concrete class Triangle](https://github.com/211018jwa/training/blob/main/week-2/day-2/abstraction/src/com/revature/model/Triangle.java)
+    - Interface
+        - [default keyword](https://github.com/211018jwa/training/blob/main/week-2/day-2/abstraction/src/com/revature/dao/PersonDAO.java#L19-L34)
+        - [interface PersonDAO example](https://github.com/211018jwa/training/blob/main/week-2/day-2/abstraction/src/com/revature/dao/PersonDAO.java#L7-L41)
+        - [dao package](https://github.com/211018jwa/training/tree/main/week-2/day-2/abstraction/src/com/revature/dao)
 
 # Question Practice
 * What is the purpose of inheritance?
@@ -39,3 +75,26 @@
 * What is the purpose of overriding the toString() method?
 * If we do not override the toString() method, what does it do by default?
 * When overriding the equals() method, why do we also need to override the hashCode() method?
+---
+* What access modifiers are there?
+* What is the difference between protected and default access modifiers?
+* What are the four pillars of OOP?
+* What is inheritance?
+* What is polymorphism?
+* Is method overloading compile-time or runtime polymorphism, and why?
+* Is method overriding compile-time or runtime polymorphism, and why?
+* What is encapsulation?
+* What is abstraction?
+* What is a Java bean?
+* What are getters and setters?
+* What access modifier should I generally be using to achieve encapsulation?
+* What is the purpose of the static keyword?
+* What can the final keyword be used with?
+* If I make a variable final, what does that mean?
+* If a class is final, what does that mean?
+* If a method is final, what does that mean?
+* Is it possible for a class to extend multiple classes?
+* Is it possible for a class to implement multiple interfaces?
+* In what version of Java was the `default` keyword introduced for interfaces, and what is the purpose of the default keyword?
+* If I declare a non-static method inside an interface, what implicit modifiers does it have?
+* If I declare a variable inside an interface, what implicit modifiers does it have?
