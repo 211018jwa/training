@@ -97,6 +97,7 @@ public class Application {
 		// We overrode the equals method in the Object class to compare the property values instead of object locations
 		// By default, the equals method will compare object locations (same as ==)
 		
+		// toString()
 		System.out.println(a10000); 
 		// by default, printing out an object gives you something like this:
 		// com.revature.model.Dog@cae86c6f
