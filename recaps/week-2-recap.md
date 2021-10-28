@@ -58,6 +58,24 @@
         - [interface PersonDAO example](https://github.com/211018jwa/training/blob/main/week-2/day-2/abstraction/src/com/revature/dao/PersonDAO.java#L7-L41)
         - [dao package](https://github.com/211018jwa/training/tree/main/week-2/day-2/abstraction/src/com/revature/dao)
 
+## Day 3
+* [Independent Research](https://github.com/211018jwa/training/blob/main/week-2/day-3/wednesday-research.md)
+    - Wrapper classes
+        - Byte, Short, Character, Integer, Long, Float, Double, Boolean
+        - Autoboxing, Unboxing
+    - Collections API
+        - List interface
+            - ArrayList class
+            - LinkedList class
+        - Map interface
+            - HashMap class
+        - Set interface
+            - HashSet class
+        - Queue interface
+    - Generics
+        - ex. `ArrayList<Dog> listOfDogs = new ArrayList<>();`
+        - `<>` syntax
+
 # Question Practice
 * What is the purpose of inheritance?
 * What is a subclass / child class?
@@ -98,3 +116,11 @@
 * In what version of Java was the `default` keyword introduced for interfaces, and what is the purpose of the default keyword?
 * If I declare a non-static method inside an interface, what implicit modifiers does it have?
 * If I declare a variable inside an interface, what implicit modifiers does it have?
+---
+* What are wrapper classes?
+* Why do we need wrapper classes?
+* What is autoboxing/unboxing?
+* What is the Collections API?
+* What is the Collections API hierarchy of interfaces and classes?
+* Can Collections such as a List contain primitives or only objects?
+* What do we mainly use generics with?
