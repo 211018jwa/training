@@ -76,6 +76,43 @@
         - ex. `ArrayList<Dog> listOfDogs = new ArrayList<>();`
         - `<>` syntax
 
+## Day 4
+* StringBuilder / StringBuffer
+    - Immutable Objects
+        - [notes](https://github.com/211018jwa/training/blob/main/week-2/day-4/stringbuilder-stringbuffer.md#what-is-an-immutable-object)
+    - StringBuilder v. StringBuffer
+        - [notes](https://github.com/211018jwa/training/blob/main/week-2/day-4/stringbuilder-stringbuffer.md#stringbuilder-v-stringbuffer)
+    - StringBuilder methods
+        - [notes](https://github.com/211018jwa/training/blob/main/week-2/day-4/stringbuilder-stringbuffer.md#stringbuilderstringbuffer-methods)
+    - Reversing a String
+        - [link to demo](https://github.com/211018jwa/training/blob/main/week-2/day-4/stringbuilder-stringbuffer-demo/src/com/revature/app/Application.java#L34-L90)
+* Review of Object Class
+    - toString(), equals(Object o), and hashCode()
+        - [notes](https://github.com/211018jwa/training/blob/main/week-2/day-4/object-class.md#object-class-methods)
+    - equals() and hashCode() contract
+        - [notes](https://github.com/211018jwa/training/blob/main/week-2/day-4/object-class.md#equals-and-hashcode-contract)
+* Inheritance rules
+    - Classes v. interfaces
+        - [notes](https://github.com/211018jwa/training/blob/main/week-2/day-4/inheritance-rules.md)
+* Wrapper classes
+    - [demo](https://github.com/211018jwa/training/blob/main/week-2/day-4/wrapper-classes/src/com/revature/app/Application.java#L5-L49)
+    - [Autoboxing example](https://github.com/211018jwa/training/blob/main/week-2/day-4/wrapper-classes/src/com/revature/app/Application.java#L37-L48)
+    - [Unboxing example](https://github.com/211018jwa/training/blob/main/week-2/day-4/wrapper-classes/src/com/revature/app/Application.java#L15-L36)
+* Collections API
+    - [List demo](https://github.com/211018jwa/training/blob/main/week-2/day-4/collections-demo/src/com/revature/demos/ListDemo.java)
+    - [Set demo](https://github.com/211018jwa/training/blob/main/week-2/day-4/collections-demo/src/com/revature/demos/SetDemo.java)
+    - [Map demo](https://github.com/211018jwa/training/blob/main/week-2/day-4/collections-demo/src/com/revature/demos/MapDemo.java)
+    - [Queue demo](https://github.com/211018jwa/training/blob/main/week-2/day-4/collections-demo/src/com/revature/demos/QueueDemo.java)
+* Intro to Testing
+    - [What is software](https://github.com/211018jwa/training/blob/main/week-2/day-4/intro-to-testing.md#what-is-software)
+    - [Why do we need testing](https://github.com/211018jwa/training/blob/main/week-2/day-4/intro-to-testing.md#why-do-we-need-testing)
+    - [Errors, bugs, failures](https://github.com/211018jwa/training/blob/main/week-2/day-4/intro-to-testing.md#error-v-bug-v-failure)
+    - [QA v. QC](https://github.com/211018jwa/training/blob/main/week-2/day-4/intro-to-testing.md#qa-v-qc)
+    - [Verification and Validation](https://github.com/211018jwa/training/blob/main/week-2/day-4/intro-to-testing.md#verification-and-validation)
+
+## Day 5
+
+
 # Question Practice
 * What is the purpose of inheritance?
 * What is a subclass / child class?
