@@ -259,3 +259,4 @@
 * What assert methods from the JUnit 5 Assertions class are commonly used? What do they do?
 * What two types of exceptions are there?
 * Describe the inheritance hierarchy for exceptions starting w/ Throwable
+* How do we handle exceptions?
