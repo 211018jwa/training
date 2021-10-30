@@ -111,7 +111,63 @@
     - [Verification and Validation](https://github.com/211018jwa/training/blob/main/week-2/day-4/intro-to-testing.md#verification-and-validation)
 
 ## Day 5
-
+* Terminology Clarifications
+    - [powerpoint](https://github.com/211018jwa/training/blob/main/week-2/day-5/terminology-clarifications.pdf)
+    - Class
+        - Blueprint for an object
+            - Properties = Non-static fields = instance variables
+            - Behaviors = Non-static methods = instance methods
+        - Can also have
+            - static fields
+            - static methods
+    - Instance = Object
+        - Every object has its own properties / non-static fields / instance variables
+        - Every object has its own behaviors / non-static methods / instance methods with access to its properties
+    - Field: variable defined at the class-level
+        - Defined directly in the class, not a method
+        - Either class scoped (static) or instance scoped (non-static)
+    - Method: block of code that can be executed by invoking it
+        - Invoke: calling the method to execute it
+        - <access modifier> <optional non-access modifier(s)> <return type> nameOfMethod(parameters...) {}
+    - Static: a non-access modifier that can be used with variables or methods
+        - static variables and methods do not need an object to be accessed
+            - Can instead access directly from the class
+        - Ex. 
+            - Employee.ceoName
+            - Employee.changeCeo("Ashwin");
+* Refactoring calculator application
+    - [ArithmeticService](https://github.com/211018jwa/training/blob/main/week-2/day-5/my-calculator-app/src/main/java/com/revature/service/ArithmeticService.java#L12-L61)
+    - [ArithmeticController](https://github.com/211018jwa/training/blob/main/week-2/day-5/my-calculator-app/src/main/java/com/revature/controller/ArithmeticController.java#L29)
+        - doAddition changed to doOperation
+        - doSubtraction changed to doOperation
+        - doMultiplication changed to doOperation
+        - doDivision changed to doOperation
+* Unit testing
+    - [notes](https://github.com/211018jwa/training/blob/main/week-2/day-5/my-calculator-app/src/test/java/com/revature/service/ArithmeticServiceTest.java#L10-L23)
+    - [demo](https://github.com/211018jwa/training/blob/main/week-2/day-5/my-calculator-app/src/test/java/com/revature/service/ArithmeticServiceTest.java#L82-L158)
+* Positive v. Negative testing
+    - [notes](https://github.com/211018jwa/training/blob/main/week-2/day-5/my-calculator-app/src/test/java/com/revature/service/ArithmeticServiceTest.java#L44-L51)
+* Test Driven Development
+    - [notes](https://github.com/211018jwa/training/blob/main/week-2/day-5/my-calculator-app/src/test/java/com/revature/service/ArithmeticServiceTest.java#L25-L42)
+* Ordering tests
+    - [notes](https://github.com/211018jwa/training/blob/main/week-2/day-5/my-calculator-app/src/test/java/com/revature/service/ArithmeticServiceTest.java#L53-L59)
+    - [example](https://github.com/211018jwa/training/blob/main/week-2/day-5/my-calculator-app/src/test/java/com/revature/service/ArithmeticServiceTest.java#L82)
+* Test case v. Test Suite
+    - [notes](https://github.com/211018jwa/training/blob/main/week-2/day-5/my-calculator-app/src/test/java/com/revature/service/ArithmeticServiceTest.java#L68-L80)
+* JUnit 5 (Jupiter annotations)
+    - [demo](https://github.com/211018jwa/training/blob/main/week-2/day-5/my-calculator-app/src/test/java/com/revature/service/DemoTest.java#L13-L64)
+* JUnit 5 (Jupiter) Assert methods
+    - assertArrayEquals(int[] expected, int[] actual)
+    - assertEquals(int expected, int actual)
+    - assertTrue(boolean actual)
+    - assertFalse(boolean actual)
+    - [notes](https://github.com/211018jwa/training/blob/main/week-2/day-5/my-calculator-app/src/test/java/com/revature/service/ArithmeticServiceTest.java#L61-L66)
+* Types of exceptions
+    - [notes](https://github.com/211018jwa/training/blob/main/week-2/day-5/ExceptionDemo/src/com/revature/app/Application.java#L48-L59)
+* Throwable / exception hierarchy
+    - [notes](https://github.com/211018jwa/training/blob/main/week-2/day-5/ExceptionDemo/src/com/revature/app/Application.java#L32-L46)
+* Handling exceptions
+    - [try-catch example (multi-catch)](https://github.com/211018jwa/training/blob/main/week-2/day-5/ExceptionDemo/src/com/revature/app/Application.java#L12-L20)
 
 # Question Practice
 * What is the purpose of inheritance?
