@@ -5,7 +5,10 @@ Due Date: November 17th
 ## Description
 You are developing a simple API for a bank.
 
-Leveraging Java 8 and following test driven development (TDD), create a RESTful API application that supports two main resources: clients and accounts.
+Leveraging Java 8, create a RESTful API application that supports two main resources: clients and accounts.
+
+* Client: a particular customer of the bank
+* Account: a client can have multiple bank accounts (ex. 2 checking accounts, 3 savings accounts)
 
 ### Technologies
 1. Java
@@ -14,7 +17,7 @@ Leveraging Java 8 and following test driven development (TDD), create a RESTful 
 4. Logback / SLF4J
 5. JUnit
 6. Mockito
-7. MariaDB
+7. PostgreSQL
 
 ## Requirements
 
@@ -52,7 +55,7 @@ The following endpoints and their respective verbs should support the operations
 - Create a SQL script that will create a table schema and populate some data for your application
 - Utilize JDBC in the application for data persistence
     - Must utilize the DAO design pattern
-    - MariaDB
+    - PostgreSQL
 
 ### Stretch Goals
 Remember that the above requirements are the minimum viable product (MVP). You can always look into adding more
