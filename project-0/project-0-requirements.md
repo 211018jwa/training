@@ -17,7 +17,7 @@ Leveraging Java 8, create a RESTful API application that supports two main resou
 4. Logback / SLF4J
 5. JUnit
 6. Mockito
-7. MariaDB
+7. PostgreSQL
 
 ## Requirements
 
@@ -55,7 +55,7 @@ The following endpoints and their respective verbs should support the operations
 - Create a SQL script that will create a table schema and populate some data for your application
 - Utilize JDBC in the application for data persistence
     - Must utilize the DAO design pattern
-    - MariaDB
+    - PostgreSQL
 
 ### Stretch Goals
 Remember that the above requirements are the minimum viable product (MVP). You can always look into adding more
