@@ -245,3 +245,17 @@
 * Why do we need to test software?
 * What is the difference between errors, bugs, and failures?
 * What is QA? What is QC? How are they different from each other?
+---
+* What is a unit test?
+* What is a unit?
+* Is something ever 100% guaranteed to be bug-free?
+* What is positive v. negative testing? What is an example of a positive test v. a negative test?
+* What is test driven development? Why might a development team choose to use TDD?
+* Is a UI / E2E test blackbox or whitebox testing? Why?
+* Is unit testing whitebox or blackbox testing? Why?
+* How do we order tests with JUnit 5 (Jupiter)?
+* What is the difference between a test case and a test suite?
+* What annotations are there when using JUnit 5 (Jupiter)?
+* What assert methods from the JUnit 5 Assertions class are commonly used? What do they do?
+* What two types of exceptions are there?
+* Describe the inheritance hierarchy for exceptions starting w/ Throwable
