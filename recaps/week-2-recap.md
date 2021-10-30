@@ -161,3 +161,31 @@
 * What is the Collections API hierarchy of interfaces and classes?
 * Can Collections such as a List contain primitives or only objects?
 * What do we mainly use generics with?
+* What is the difference between StringBuilder/StringBuffer? Which one is faster?
+* Why is String concatenation slower than StringBuilder/StringBuffer?
+* Are Strings immutable or mutable? What does that mean?
+* Is StringBuilder/StringBuffer immutable or mutable?
+* Write a method that takes a String and returns a reversed version. Implement it using String concatenation, and another time with StringBuilder.
+* Why do we need to override both equals and hashCode at the same time?
+* Can we extend multiple classes? What about implementing multiple interfaces?
+* What is a List? Is it indexed? Is it ordered?
+* How do we add elements to a List?
+* Is List an interface or class?
+* What classes implement List?
+* What is a Set?
+* Do sets have indices?
+* Is Set an interface or class?
+* What classes implement Set?
+* What is a Map?
+* How do we add a key-value pair to a Map?
+* How do we retrieve a value using a key?
+* Can keys have duplicates or do they need to be unique?
+* Is Map an interface or class?
+* What classes implement Map?
+* What is a Queue?
+* Is Queue an interface or class?
+* What classes implement Queue?
+* What is FIFO (first-in-first-out)?
+* Why do we need to test software?
+* What is the difference between errors, bugs, and failures?
+* What is QA? What is QC? How are they different from each other?
