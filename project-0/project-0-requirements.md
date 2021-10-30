@@ -7,6 +7,9 @@ You are developing a simple API for a bank.
 
 Leveraging Java 8, create a RESTful API application that supports two main resources: clients and accounts.
 
+* Client: a particular customer of the bank
+* Account: a client can have multiple bank accounts (ex. 2 checking accounts, 3 savings accounts)
+
 ### Technologies
 1. Java
 2. Javalin
