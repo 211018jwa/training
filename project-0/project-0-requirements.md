@@ -5,7 +5,7 @@ Due Date: November 17th
 ## Description
 You are developing a simple API for a bank.
 
-Leveraging Java 8 and following test driven development (TDD), create a RESTful API application that supports two main resources: clients and accounts.
+Leveraging Java 8, create a RESTful API application that supports two main resources: clients and accounts.
 
 ### Technologies
 1. Java
