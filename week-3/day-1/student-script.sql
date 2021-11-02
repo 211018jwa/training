@@ -29,7 +29,7 @@ FROM students;
 SELECT student_id, student_first_name, student_last_name
 FROM students;
 
--- Querying a specific student from students
-SELECT *
-FROM students 
-WHERE student_id = 2;
+-- Querying a specific student by their id 
+
+
+
