@@ -70,3 +70,30 @@
 * What is the purpose of DBeaver?
 * Why did we install DBeaver and Postgres?
 * What is JDBC?
+---
+* What does SQL stand for?
+* Is SQL a programming language?
+* What is a relational database management system (RDBMS)?
+* What are common numerical datatypes we might use in SQL?
+* What are common character types we might use?
+* What are common date/time types we might use?
+* What is a schema?
+* What SQL sublanguages are there?
+* What commands are associated with DDL?
+* What commands are associated with DML?
+* How is DQL related to DML? Which command from DML does DQL have?
+* What does CRUD mean?
+* What commands are associated with DCL?
+* What commands are associated with TCL?
+* What are the 6 common constraints in SQL?
+* What are composite keys?
+* What is the purpose of database normalization?
+* What is 1NF?
+* What is 2NF?
+* What is 3NF?
+* What are the 3 relationships that describe multiplicity/cardinality?
+* What is the SERIAL datatype in Postgres?
+* What does utility class mean?
+* What steps do we need to take to query data from the database using the JDBC API in Java?
+* What are the three layers?
+* What is the purpose of the data access layer?
