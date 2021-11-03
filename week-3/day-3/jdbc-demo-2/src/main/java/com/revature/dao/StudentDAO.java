@@ -8,6 +8,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.revature.dto.AddOrUpdateStudentDTO;
 import com.revature.model.Student;
 import com.revature.util.JDBCUtility;
 
@@ -31,7 +32,7 @@ public class StudentDAO {
 	// Generally a good practice for Create methods in a DAO class is to return the object being created
 	// The same is true for Updating a particular record
 	// SO, we are going to change the return type from void to Student
-	public Student addStudent(Student student) throws SQLException {
+	public Student addStudent(AddOrUpdateStudentDTO student) throws SQLException {
 		
 		// try with resources: used when we want for our application to automatically call the .close() method on whatever "resource"
 		// we are using
@@ -136,28 +137,55 @@ public class StudentDAO {
 		
 	}
 	
-//	public void updateStudent(Student student) throws SQLException {
-//		
-//		try (Connection con = JDBCUtility.getConnection()) {
-//			
-//		}
-//		
-//	}
-//	
-//	public void deleteStudentById(int id) throws SQLException {
-//		
-//		try (Connection con = JDBCUtility.getConnection()) {
-//			
-//		}
-//		
-//	}
-//	
-//	public void deleteAllStudents() throws SQLException {
-//		
-//		try (Connection con = JDBCUtility.getConnection()) {
-//			
-//		}
-//		
-//	}
+	// Update student will return a Student object corresponding to the record that was updated, and takes in 2 argument corresponding with the studentId
+	// whose row we would like to update, and the AddOrUpdateStudentDTO object containing the properties of what we want to update that row with
+	public Student updateStudent(int studentId, AddOrUpdateStudentDTO student) throws SQLException {
+		
+		try (Connection con = JDBCUtility.getConnection()) {
+			String sql = "UPDATE students "
+					+ "SET student_first_name = ?,"
+					+ "		student_last_name = ?,"
+					+ "		student_classification = ?,"
+					+ "		student_age = ?"
+					+ "WHERE "
+					+ "student_id = ?;";
+			
+			PreparedStatement pstmt = con.prepareStatement(sql);
+			
+			pstmt.setString(1, student.getFirstName());
+			pstmt.setString(2, student.getLastName());
+			pstmt.setString(3, student.getClassification());
+			pstmt.setInt(4, student.getAge());
+			pstmt.setInt(5, studentId);
+			
+			int numberOfRecordsUpdated = pstmt.executeUpdate();
+			
+			if (numberOfRecordsUpdated != 1) {
+				throw new SQLException("Unable to update student record w/ id of " + studentId);
+			}
+			
+		}
+		
+		return new Student(studentId, student.getFirstName(), student.getLastName(), student.getClassification(), student.getAge());
+	}
+	
+	/*
+	 * Exercise for the next 15 minutes: go ahead and implement the deleteStudentById method
+	 */
+	public void deleteStudentById(int id) throws SQLException {
+		
+		try (Connection con = JDBCUtility.getConnection()) {
+			
+		}
+		
+	}
+	
+	public void deleteAllStudents() throws SQLException {
+		
+		try (Connection con = JDBCUtility.getConnection()) {
+			
+		}
+		
+	}
 	
 }
