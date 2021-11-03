@@ -30,6 +30,8 @@ SELECT student_id, student_first_name, student_last_name
 FROM students;
 
 -- Querying a specific student by their id 
-
+SELECT *
+FROM students 
+WHERE student_id = 1;
 
 
