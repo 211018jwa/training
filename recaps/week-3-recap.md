@@ -57,6 +57,46 @@
 * DAO methods (getAllStudents and getStudentById)
     - [demo](https://github.com/211018jwa/training/blob/main/week-3/day-2/jdbc-demo-2/src/main/java/com/revature/dao/StudentDAO.java#L43-L107)
 
+## Day 3
+* Data Transfer Object (DTO)
+    - [notes](https://github.com/211018jwa/training/blob/main/week-3/day-3/jdbc-demo-2/src/main/java/com/revature/dto/AddOrUpdateStudentDTO.java#L5-L15)
+    - [example](https://github.com/211018jwa/training/blob/main/week-3/day-3/jdbc-demo-2/src/main/java/com/revature/dto/AddOrUpdateStudentDTO.java#L17-L94)
+* Add Student functionality in StudentDAO
+    - [demo](https://github.com/211018jwa/training/blob/main/week-3/day-3/jdbc-demo-2/src/main/java/com/revature/dao/StudentDAO.java#L35-L72)
+        - INSERT Syntax
+            - [lines](https://github.com/211018jwa/training/blob/main/week-3/day-3/jdbc-demo-2/src/main/java/com/revature/dao/StudentDAO.java#L43-L44)
+        - prepareStatement configuration to return generated primary key
+            - [line of code](https://github.com/211018jwa/training/blob/main/week-3/day-3/jdbc-demo-2/src/main/java/com/revature/dao/StudentDAO.java#L46)
+        - throwing a SQLException if inserted records is 0
+            - [lines of code](https://github.com/211018jwa/training/blob/main/week-3/day-3/jdbc-demo-2/src/main/java/com/revature/dao/StudentDAO.java#L53-L59)
+        - getting the generated key and returning an object representing the record created in the SQL database
+            - [lines of code](https://github.com/211018jwa/training/blob/main/week-3/day-3/jdbc-demo-2/src/main/java/com/revature/dao/StudentDAO.java#L61-L69)
+* Update Student
+    - [demo](https://github.com/211018jwa/training/blob/main/week-3/day-3/jdbc-demo-2/src/main/java/com/revature/dao/StudentDAO.java#L140-L170)
+        - UPDATE Syntax
+            - [lines](https://github.com/211018jwa/training/blob/main/week-3/day-3/jdbc-demo-2/src/main/java/com/revature/dao/StudentDAO.java#L145-L151)
+* Delete Student
+    - By Id
+        - [example](https://github.com/211018jwa/training/blob/main/week-3/day-3/jdbc-demo-2/src/main/java/com/revature/dao/StudentDAO.java#L179-L195)
+    - All
+        - [example](https://github.com/211018jwa/training/blob/main/week-3/day-3/jdbc-demo-2/src/main/java/com/revature/dao/StudentDAO.java#L197-L211)
+* Object dependencies
+    - [example](https://github.com/211018jwa/training/blob/main/week-3/day-3/jdbc-demo-2/src/main/java/com/revature/service/StudentService.java#L12-L22)
+        - "StudentService objects depend on having a StudentDAO object"
+* StudentService
+    - Edit First Name of Student
+        - [demo](https://github.com/211018jwa/training/blob/main/week-3/day-3/jdbc-demo-2/src/main/java/com/revature/service/StudentService.java#L24-L55)
+* StudentController
+    - Edit First Name of Student
+        - [demo](https://github.com/211018jwa/training/blob/main/week-3/day-3/jdbc-demo-2/src/main/java/com/revature/controller/StudentController.java#L19-L30)
+        - Extract information from HTTP patch request
+            - [screenshot of POSTMAN](https://github.com/211018jwa/training/tree/main/week-3/day-3/patch-request-firstname.png)
+            - path variable (id)
+            - JSON -> object (EditFirstNameDTO)
+        - EditFirstNameDTO
+            - [demo](https://github.com/211018jwa/training/blob/main/week-3/day-3/jdbc-demo-2/src/main/java/com/revature/dto/EditFirstNameDTO.java)
+        
+
 # Questions
 * What is an exception?
 * Are exceptions inherently bad? Why do we use them in applications?
