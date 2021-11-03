@@ -90,7 +90,7 @@
     - Edit First Name of Student
         - [demo](https://github.com/211018jwa/training/blob/main/week-3/day-3/jdbc-demo-2/src/main/java/com/revature/controller/StudentController.java#L19-L30)
         - Extract information from HTTP patch request
-            - [screenshot of POSTMAN](https://github.com/211018jwa/training/tree/main/week-3/day-3/patch-request-firstname.png)
+            - [screenshot of POSTMAN](https://github.com/211018jwa/training/tree/main/week-3/day-3/patch-request-firstname.PNG)
             - path variable (id)
             - JSON -> object (EditFirstNameDTO)
         - EditFirstNameDTO
