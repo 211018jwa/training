@@ -26,6 +26,37 @@
 * JDBC basic demo
     - [demo](https://github.com/211018jwa/training/blob/main/week-3/day-1/jdbc-demo-1/src/main/java/com/revature/demo/Application.java)
 
+## Day 2
+* SQL Notes
+    - Structured Query Language
+        - [notes](https://github.com/211018jwa/training/blob/main/week-3/day-2/sql-notes.md#sql-structured-query-language)
+    - Relational Database Management System (RDBMS)
+        - [notes](https://github.com/211018jwa/training/blob/main/week-3/day-2/sql-notes.md#relational-database-management-system-rdbms)
+    - Common datatypes
+        - [notes](https://github.com/211018jwa/training/blob/main/week-3/day-2/sql-notes.md#common-datatypes)
+    - Schema
+        - [notes](https://github.com/211018jwa/training/blob/main/week-3/day-2/sql-notes.md#schema)
+    - SQL Sublanguages
+        - [notes](https://github.com/211018jwa/training/blob/main/week-3/day-2/sql-notes.md#sql-sublanguages)
+    - Constraints
+        - [notes](https://github.com/211018jwa/training/blob/main/week-3/day-2/sql-notes.md#constraints)
+    - Composite Keys
+        - [notes](https://github.com/211018jwa/training/blob/main/week-3/day-2/sql-notes.md#composite-keys)
+    - Database Normalization
+        - [notes](https://github.com/211018jwa/training/blob/main/week-3/day-2/sql-notes.md#database-normalization)
+    - Multiplicity / Cardinality
+        - [notes](https://github.com/211018jwa/training/blob/main/week-3/day-2/sql-notes.md#multiplicity--cardinality)
+* SERIAL datatype
+    - Auto-incrementing INTEGER type
+    - [example](https://github.com/211018jwa/training/blob/main/week-3/day-2/student-script.sql#L8)
+* Creating a Utility class for obtaining a Connection object
+    - [notes](https://github.com/211018jwa/training/blob/main/week-3/day-2/jdbc-demo-2/src/main/java/com/revature/util/JDBCUtility.java#L15-L21)
+    - [demo](https://github.com/211018jwa/training/blob/main/week-3/day-2/jdbc-demo-2/src/main/java/com/revature/util/JDBCUtility.java#L9-L35)
+* Three-layered architecture
+    - [notes](https://github.com/211018jwa/training/blob/main/week-3/day-2/jdbc-demo-2/src/main/java/com/revature/dao/StudentDAO.java#L13-L21)
+* DAO methods (getAllStudents and getStudentById)
+    - [demo](https://github.com/211018jwa/training/blob/main/week-3/day-2/jdbc-demo-2/src/main/java/com/revature/dao/StudentDAO.java#L43-L107)
+
 # Questions
 * What is an exception?
 * Are exceptions inherently bad? Why do we use them in applications?
