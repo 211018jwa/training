@@ -171,11 +171,25 @@ public class StudentDAO {
 	
 	/*
 	 * Exercise for the next 15 minutes: go ahead and implement the deleteStudentById method
+	 * 
+	 * 1. think about the query you need to write, test it out over on DBeaver, see if it actually works the way you want it to work, and then
+	 * 		port that query over to our Java application here
+	 * 2. Go through with the same format we have done for updateStudent
 	 */
 	public void deleteStudentById(int id) throws SQLException {
 		
 		try (Connection con = JDBCUtility.getConnection()) {
+			String sql = "DELETE FROM students WHERE student_id = ?";
 			
+			PreparedStatement pstmt = con.prepareStatement(sql);
+			
+			pstmt.setInt(1, id);
+			
+			int numberOfRecordsDeleted = pstmt.executeUpdate();
+			
+			if (numberOfRecordsDeleted != 1) {
+				throw new SQLException("Unable to delete student record w/ id of " + id);
+			}
 		}
 		
 	}
@@ -183,7 +197,15 @@ public class StudentDAO {
 	public void deleteAllStudents() throws SQLException {
 		
 		try (Connection con = JDBCUtility.getConnection()) {
+			String sql = "DELETE FROM students";
 			
+			PreparedStatement pstmt = con.prepareStatement(sql);
+			
+			int numberOfRecordsDeleted = pstmt.executeUpdate();
+			
+			if (numberOfRecordsDeleted == 0) {
+				throw new SQLException("Unable to delete any records (check if records exist in the table)");
+			}
 		}
 		
 	}
