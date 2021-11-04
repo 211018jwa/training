@@ -85,6 +85,8 @@
         - "StudentService objects depend on having a StudentDAO object"
 * StudentService
     - Edit First Name of Student
+        - Throwing a custom exception if student with id not found
+            - [lines of code](https://github.com/211018jwa/training/blob/main/week-3/day-3/jdbc-demo-2/src/main/java/com/revature/service/StudentService.java#L42-L44)
         - [demo](https://github.com/211018jwa/training/blob/main/week-3/day-3/jdbc-demo-2/src/main/java/com/revature/service/StudentService.java#L24-L55)
 * StudentController
     - Edit First Name of Student
@@ -137,3 +139,13 @@
 * What steps do we need to take to query data from the database using the JDBC API in Java?
 * What are the three layers?
 * What is the purpose of the data access layer?
+---
+* What is a DTO (Data transfer object)?
+* What was the motivation for creating a AddOrUpdateStudentDTO class to use when adding or updating a student in our demo example?
+* When we insert a new record, if the datatype for the primary key is SERIAL, do we need to provide a primary key value ourselves?
+* What layer's methods will the service layer's methods be invoking?
+* What layer's methods will the controller layer's methods/lambdas be invoking?
+* What technology do we use in the controller layer (starts with J)?
+* What technology do we use in the data access layer (also starts with a J)?
+* What does `ctx.bodyAsClass(EditFirstNameDTO.class)` do in the demo's controller layer?
+* What does `ctx.pathParam("id")` do in the demo's controller layer?
