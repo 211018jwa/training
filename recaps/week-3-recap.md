@@ -97,7 +97,40 @@
             - JSON -> object (EditFirstNameDTO)
         - EditFirstNameDTO
             - [demo](https://github.com/211018jwa/training/blob/main/week-3/day-3/jdbc-demo-2/src/main/java/com/revature/dto/EditFirstNameDTO.java)
-        
+
+## Day 4
+* StudentController
+    - Change "Edit First Name of Student" handler logic
+        - [changes](https://github.com/211018jwa/training/blob/main/week-3/day-4/jdbc-demo-2/src/main/java/com/revature/controller/StudentController.java#L31-L42)
+* HTTP
+    - Topics
+        - Example of an HTTP client v. HTTP server
+        - HTTP Requests
+            - URI
+            - method
+            - headers
+            - body
+        - HTTP Responses
+            - status code
+            - headers
+            - body
+    - [notes](https://github.com/211018jwa/training/blob/main/week-3/day-4/jdbc-demo-2/src/main/java/com/revature/controller/StudentController.java#L46-L88)
+* SQL 
+    - Adding grades table
+        - one student has many grades (one-to-many)
+        - [sql script](https://github.com/211018jwa/training/blob/main/week-3/day-4/student-grades-script.sql#L24-L42)
+    - Referential Integrity
+        - [notes and demo](https://github.com/211018jwa/training/blob/main/week-3/day-4/student-grades-script.sql#L48-L67)
+    - ACID properties
+        - [notes and demo](https://github.com/211018jwa/training/blob/main/week-3/day-4/student-grades-script.sql#L70-L112)
+    - Scalar and aggregate functions
+        - [demo and notes](https://github.com/211018jwa/training/blob/main/week-3/day-4/student-grades-script.sql#L114-L189)
+    - Joins
+        - [demo and notes](https://github.com/211018jwa/training/blob/main/week-3/day-4/student-grades-script.sql#L191-L213)
+    - SELECT clauses order
+        - [notes](https://github.com/211018jwa/training/blob/main/week-3/day-4/student-grades-script.sql#L215-L228)
+    - ORDER BY
+        - [demo](https://github.com/211018jwa/training/blob/main/week-3/day-4/student-grades-script.sql#L230-L236)
 
 # Questions
 * What is an exception?
@@ -149,3 +182,29 @@
 * What technology do we use in the data access layer (also starts with a J)?
 * What does `ctx.bodyAsClass(EditFirstNameDTO.class)` do in the demo's controller layer?
 * What does `ctx.pathParam("id")` do in the demo's controller layer?
+---
+* What is the purpose of `ctx.json(...)`?
+* What is the purpose of `ctx.status(...)`?
+* What is HTTP?
+* Describe the HTTP request/response cycle in relation to our backend application
+* What are the 5 commonly used HTTP methods?
+* What is the proper usage of GET v. POST v. PUT v. PATCH v. DELETE?
+* What 4 components does an HTTP request consist of?
+* What 3 components does an HTTP response consist of?
+* What do each of the 1XX, 2XX, 3XX, 4XX, and 5XX status code categories mean?
+* If I wanted to delete a student with ID of 1, what is the appropriate HTTP method to use, and what might the URI look like?
+* What is referential integrity?
+* What are the 4 ACID properties?
+* What is atomicity?
+* What is consistency?
+* What is isolation?
+* What is durability?
+* What are aggregate functions and scalar functions? How are they different from each other?
+* Research and remember some examples of aggregate functions
+* Research and remember some examples of scalar functions
+* What is the purpose of the GROUP BY clause? What type of function (scalar? aggregate?) do we use with GROUP BY?
+* What is the difference between WHERE and HAVING?
+* What are the 4 types of joins?
+* How would you describe an INNER JOIN, an OUTER JOIN, a LEFT JOIN, and a RIGHT JOIN?
+* Of the following clauses associated with the SELECT command (`FROM`, `JOIN ... ON ... = ...`, `WHERE`, `GROUP BY`, `HAVING`, `ORDER BY`) remember the order they must be written in
+* How does ORDER BY order the data from a query by default (ascending? descending?) ? How do we have it do the opposite?
