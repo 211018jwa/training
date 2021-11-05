@@ -3,6 +3,7 @@ package com.revature.controller;
 import java.util.List;
 
 import com.revature.dto.AddOrUpdateStudentDTO;
+import com.revature.dto.ExceptionMessageDTO;
 import com.revature.exceptions.InvalidParameterException;
 import com.revature.exceptions.StudentNotFoundException;
 import com.revature.model.Student;
@@ -29,26 +30,23 @@ public class StudentController {
 		// Extract the information in the form of JSON from the body and place it into an object of the type EditFirstNameDTO
 		AddOrUpdateStudentDTO dto = ctx.bodyAsClass(AddOrUpdateStudentDTO.class); // We need a no-args constructor and setters
 		
-		try {
-			// When we invoke the editFirstNameOfStudent method (service layer), it will then contact the updateStudent method in the DAO layer, which
-			// will then return the Student object representation of the record that was newly updated
-			Student studentThatWasJustEdited = this.studentService.editFirstNameOfStudent(studentId, dto.getFirstName());
-			
-			// We then take that object and convert it into JSON
-			// This JSON is then sent back to the client that sent the request (in our case, Postman)
-			ctx.json(studentThatWasJustEdited); // For this to work, we need to have getter methods that exist for that object
-		} catch(StudentNotFoundException e) {
-			ctx.status(404); // 404 is an HTTP status code that means not found
-			ctx.json(e);
-		} catch(InvalidParameterException e) {
-			ctx.status(400);
-			ctx.json(e);
-		}
+		// When we invoke the editFirstNameOfStudent method (service layer), it will then contact the updateStudent method in the DAO layer, which
+		// will then return the Student object representation of the record that was newly updated
+		Student studentThatWasJustEdited = this.studentService.editFirstNameOfStudent(studentId, dto.getFirstName());
+		
+		// We then take that object and convert it into JSON
+		// This JSON is then sent back to the client that sent the request (in our case, Postman)
+		ctx.json(studentThatWasJustEdited); // For this to work, we need to have getter methods that exist for that object
 		
 	};
 	
 	private Handler addStudent = (ctx) -> {
+		AddOrUpdateStudentDTO dto = ctx.bodyAsClass(AddOrUpdateStudentDTO.class);
 		
+		Student s = this.studentService.addStudent(dto);
+		
+		ctx.json(s);
+		ctx.status(201); // 201 CREATED
 	};
 	
 	private Handler getAllStudents = (ctx) -> {
@@ -60,18 +58,9 @@ public class StudentController {
 	private Handler getStudentById = (ctx) -> {
 		String id = ctx.pathParam("id");
 		
-		try {
-			Student s = this.studentService.getStudentById(id);
+		Student s = this.studentService.getStudentById(id);
 			
-			ctx.json(s);
-		} catch(InvalidParameterException e) {
-			ctx.status(400);
-			ctx.json(e);
-		} catch(StudentNotFoundException e) {
-			ctx.status(404);
-			ctx.json(e);
-		}
-		
+		ctx.json(s);
 	};
 	
 	private Handler editStudentById = (ctx) -> {
@@ -79,7 +68,9 @@ public class StudentController {
 	};
 	
 	private Handler deleteStudentById = (ctx) -> {
+		String id = ctx.pathParam("id");
 		
+		this.studentService.deleteStudentById(id);
 	};
 	
 	private Handler deleteAllStudents = (ctx) -> {

@@ -1,7 +1,12 @@
 package com.revature.service;
 
 import java.sql.SQLException;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.revature.dao.StudentDAO;
 import com.revature.dto.AddOrUpdateStudentDTO;
@@ -10,6 +15,8 @@ import com.revature.exceptions.StudentNotFoundException;
 import com.revature.model.Student;
 
 public class StudentService {
+	
+	private Logger logger = LoggerFactory.getLogger(StudentService.class);
 	
 	private StudentDAO studentDao; // HAS-A relationship. StudentService HAS-A StudentDAO
 	// In other words, StudentService depends on StudentDAO
@@ -44,8 +51,6 @@ public class StudentService {
 		try {
 			int id = Integer.parseInt(studentId);
 		
-		
-		
 			// First, grab the information about the student with a student id of the value studentId
 			Student studentToEdit = this.studentDao.getStudentById(id);
 		
@@ -76,6 +81,8 @@ public class StudentService {
 	// Because we are not catching it in this method
 	// We are using throws SQLException in the method signature
 	public List<Student> getAllStudents() throws SQLException {
+		logger.info("getAllStudents() invoked");
+		
 		List<Student> students = this.studentDao.getAllStudents();
 		
 		return students;
@@ -99,6 +106,64 @@ public class StudentService {
 			throw new InvalidParameterException("Id provided is not an int convertable value");
 		}
 		
+	}
+
+	/*
+	 * business logic
+	 * 1. We don't want firstName to be blank
+	 * 2. We don't want lastName to be blank
+	 * 3. We want classification to be either Freshman, Sophmore, Junior, or Senior
+	 * 4. we don't want age to be negative
+	 */
+	public Student addStudent(AddOrUpdateStudentDTO dto) throws InvalidParameterException, SQLException {
+		// dto contains firstName, lastName, classification, age
+		if (dto.getFirstName().trim().equals("") || dto.getLastName().trim().equals("")) {
+			throw new InvalidParameterException("First name and/or last name cannot be blank");
+		}
+		
+		Set<String> validClassifications = new HashSet<>();
+		validClassifications.add("Freshman");
+		validClassifications.add("Sophmore");
+		validClassifications.add("Junior");
+		validClassifications.add("Senior");
+		
+		// If validClassifications does NOT contain the information provided in the DTO for classification
+		if (!validClassifications.contains(dto.getClassification())) {
+			throw new InvalidParameterException("You entered an invalid classification");
+		}
+		
+		if (dto.getAge() < 0) {
+			throw new InvalidParameterException("Age cannot be less than 0");
+		}
+		
+		// Trim the leading and trailing whitespaces in the first and last names
+		dto.setFirstName(dto.getFirstName().trim());
+		dto.setLastName(dto.getLastName().trim());
+		
+		Student insertedStudent = this.studentDao.addStudent(dto);
+		
+		return insertedStudent;
+	}
+
+	/*
+	 * 1. Check to see if the studentId provided in the URI is actually an int, and if not, throw an InvalidParameterException
+	 * 2. If the student we are trying to delete does not exist, throw a StudentNotFoundException
+	 */
+	public void deleteStudentById(String studentId) throws InvalidParameterException, SQLException, StudentNotFoundException {
+		try {
+			int id = Integer.parseInt(studentId); 
+			
+			// Check to see if a student with that id exists or not
+			Student student = this.studentDao.getStudentById(id);
+			if (student == null) {
+				throw new StudentNotFoundException("Student with id " + id + " was not found, and therefore we cannot delete that student");
+			}
+			
+			this.studentDao.deleteStudentById(id);
+			
+		} catch(NumberFormatException e) {
+			throw new InvalidParameterException("Id supplied is not an int");
+		}
 	}
 	
 	
