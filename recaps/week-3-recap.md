@@ -131,6 +131,43 @@
         - [notes](https://github.com/211018jwa/training/blob/main/week-3/day-4/student-grades-script.sql#L215-L228)
     - ORDER BY
         - [demo](https://github.com/211018jwa/training/blob/main/week-3/day-4/student-grades-script.sql#L230-L236)
+## Day 5
+* JDBC
+    - DriverManager class
+    - SQLException class
+    - Connection interface
+    - Statement interface
+    - PreparedStatement interface
+    - CallableStatement interface
+    - ResultSet interface
+    - [notes](https://github.com/211018jwa/training/blob/main/week-3/day-5/jdbc-notes.md)
+* Web Services / REST
+    - [notes](https://github.com/211018jwa/training/blob/main/week-3/day-5/http-rest-webservices.md)
+* Mapping endpoints
+    - [example](https://github.com/211018jwa/training/blob/main/week-3/day-5/student-web-service-with-unit-testing/src/main/java/com/revature/controller/StudentController.java#L128-L133)
+* Implementing addStudent functionality
+    - [handler example](https://github.com/211018jwa/training/blob/main/week-3/day-5/student-web-service-with-unit-testing/src/main/java/com/revature/controller/StudentController.java#L43-L50)
+    - [service layer](https://github.com/211018jwa/training/blob/main/week-3/day-5/student-web-service-with-unit-testing/src/main/java/com/revature/service/StudentService.java#L118-L146)
+* Implementing getAllStudents functionality
+    - [handler example](https://github.com/211018jwa/training/blob/main/week-3/day-5/student-web-service-with-unit-testing/src/main/java/com/revature/controller/StudentController.java#L52-L56)
+    - [service layer](https://github.com/211018jwa/training/blob/main/week-3/day-5/student-web-service-with-unit-testing/src/main/java/com/revature/service/StudentService.java#L80-L89)
+* Implementing getStudentById functionality
+    - [handler example](https://github.com/211018jwa/training/blob/main/week-3/day-5/student-web-service-with-unit-testing/src/main/java/com/revature/controller/StudentController.java#L58-L64)
+    - [service layer](https://github.com/211018jwa/training/blob/main/week-3/day-5/student-web-service-with-unit-testing/src/main/java/com/revature/service/StudentService.java#L93-L109)
+* Implementing deleteStudentById functionality
+    - [handler example](https://github.com/211018jwa/training/blob/main/week-3/day-5/student-web-service-with-unit-testing/src/main/java/com/revature/controller/StudentController.java#L70-L74)
+    - [service layer](https://github.com/211018jwa/training/blob/main/week-3/day-5/student-web-service-with-unit-testing/src/main/java/com/revature/service/StudentService.java#L148-L167)
+* Writing Unit Tests for StudentService
+    - ARRANGE, ASSERT, ACT
+    - [getAllStudents() tests](https://github.com/211018jwa/training/blob/main/week-3/day-5/student-web-service-with-unit-testing/src/test/java/com/revature/service/StudentServiceTest.java#L26-L106)
+    - [getStudentById(int id) tests](https://github.com/211018jwa/training/blob/main/week-3/day-5/student-web-service-with-unit-testing/src/test/java/com/revature/service/StudentServiceTest.java#L108-L207)
+    - [editFirstNameOfStudent(String studentId, String changedName) tests](https://github.com/211018jwa/training/blob/main/week-3/day-5/student-web-service-with-unit-testing/src/test/java/com/revature/service/StudentServiceTest.java#L209-L288)
+    - [addStudent(AddOrUpdateStudentDTO dto) tests](https://github.com/211018jwa/training/blob/main/week-3/day-5/student-web-service-with-unit-testing/src/test/java/com/revature/service/StudentServiceTest.java#L290-L442)
+* Javalin Exception mapping
+    - [notes and demo](https://github.com/211018jwa/training/blob/main/week-3/day-5/student-web-service-with-unit-testing/src/main/java/com/revature/controller/ExceptionMappingController.java#L10-L38)
+* Logging with Logback framework and SLF4J
+    - [notes](https://github.com/211018jwa/training/blob/main/week-3/day-5/student-web-service-with-unit-testing/src/main/resources/logback.xml#L1-L23)
+    - [configuration](https://github.com/211018jwa/training/blob/main/week-3/day-5/student-web-service-with-unit-testing/src/main/resources/logback.xml#L25-L49)
 
 # Questions
 * What is an exception?
@@ -208,3 +245,4 @@
 * How would you describe an INNER JOIN, an OUTER JOIN, a LEFT JOIN, and a RIGHT JOIN?
 * Of the following clauses associated with the SELECT command (`FROM`, `JOIN ... ON ... = ...`, `WHERE`, `GROUP BY`, `HAVING`, `ORDER BY`) remember the order they must be written in
 * How does ORDER BY order the data from a query by default (ascending? descending?) ? How do we have it do the opposite?
+---
