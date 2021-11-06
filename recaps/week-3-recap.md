@@ -246,3 +246,21 @@
 * Of the following clauses associated with the SELECT command (`FROM`, `JOIN ... ON ... = ...`, `WHERE`, `GROUP BY`, `HAVING`, `ORDER BY`) remember the order they must be written in
 * How does ORDER BY order the data from a query by default (ascending? descending?) ? How do we have it do the opposite?
 ---
+* What are the classes and interfaces associated with the JDBC API?
+* How does the DriverManager class help us to obtain a Connection object?
+* What steps do we need to take to create a Connection object using DriverManager?
+* What is a SQL Driver? Why do we need to register the Postgres Driver with the DriverManager?
+* How is PreparedStatement different than Statement?
+* What do we use ResultSet for?
+* What 2 common types of web services are in use today?
+* What is REST?
+* What are the 6 constraints of REST?
+* What is Mockito?
+* What is the purpose of a mock object?
+* How does mocking tie into the definition of a unit test?
+* Why might we choose to use Javalin's exception mapping functionality over `try {} catch(... e) {}`?
+* How does throwing exceptions in the service layer of our application help with implementing proper HTTP status codes?
+* Why is logging important in an application?
+* What are the 5 logging levels? What is the least important to most important?
+* What is the purpose of an appender?
+* What is the ConsoleAppender and FileAppender?
