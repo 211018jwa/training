@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+}
+
+/* The styling here applies to all h2 elements */
+h2 {
+    color: #FF00FF;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(125, 50, 200);
+    background-color: black;
+}
+
+/* Class v. Id 
+
+    ====== Class ======
+    We can utilize the class attribute
+    to give multiple elements a particular
+    value
+        For example, down below we gave an h2
+        and a p tag a class of red-text
+    You can then utilize the class selector
+    to apply CSS properties to that particular class
+
+    .red-text { } <- .red-text is a class selector
+
+    ====== Id ======
+    Id must be unique. You cannot have multiple elements
+    with the same id
+
+    A unique id can be assigned to an element using the id attribute
+
+    You can then use the id selector to apply CSS properties to that element
+
+    #some-id {
+        color: cyan;
+    }
+
+*/
+
+.red-text {
+    color: red;
+}
+
+.blue-text {
+    color: blue;
+}
+
+#website-introduction {
+    color: cyan;
+}
+
+p {
+    color: mediumspringgreen;
+}
+

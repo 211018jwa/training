@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <!-- Importing font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <style>
+        .box {
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            text-align: center;
+        }
+
+        .green-box {
+            padding: 100px;
+            background-color: green;
+            margin: 100px;
+        }
+
+        .red-box {
+            background-color: red;
+            margin-bottom: 10px;
+            /* Top, right, bottom, left are all the same */
+            padding: 10px;
+        }
+
+        .blue-box {
+            background-color: blue;
+            margin-top: 10px;
+            /* We can specify top, right, bottom, left
+            padding individually (clock-wise motion) */
+            padding: 25px 10px 100px 10px;
+            font-family: 'Lobster';
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="box green-box">
+        <div class="box red-box"></div>
+        <div class="box blue-box"></div>
+    </div>
+</body>
+</html>
