@@ -9,10 +9,26 @@
     <!-- Importing font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
+    <!-- 
+        px (100px, 20px, ...): pixels
+        em (2em, 1.5em, 1em): based on font-size of the element
+            so if your element has a font-size of 5px,
+            2em = 10px
+            1em = 5px
+        rem (2rem, 4rem, 3.5rem): based on font-size
+            of the parent element
+            So, if the parent element has a font-size of
+            20px,
+                2rem = 40px
+                4rem = 80px
+                3.5rem = 70px
+    -->
+
     <style>
         .box {
             border-style: solid;
-            border-width: 2px;
+            font-size: 20px;
+            border-width: 0.25em;
             border-color: black;
             text-align: center;
         }
@@ -21,6 +37,7 @@
             padding: 100px;
             background-color: green;
             margin: 100px;
+            position: relative;
         }
 
         .red-box {
@@ -28,6 +45,19 @@
             margin-bottom: 10px;
             /* Top, right, bottom, left are all the same */
             padding: 10px;
+
+            /* position: relative 
+            allows us to move an element relative to
+            its "natural" position on a page
+            */
+            position: relative;
+            left: 100px; /* moves it 100px over from the left */
+            top: 100px; /* 100px down from the top */
+            /* bottom, right are 2 other ones */
+
+            z-index: 100; /* If we have overlapping elements,
+            z index allows for the elements with higher values
+            to go on top */
         }
 
         .blue-box {
@@ -35,16 +65,26 @@
             margin-top: 10px;
             /* We can specify top, right, bottom, left
             padding individually (clock-wise motion) */
-            padding: 25px 10px 100px 10px;
+            padding: 100px 10px 100px 10px;
             font-family: 'Lobster';
             color: white;
+            z-index: 0;
+            /*
+                position: absolute
+
+                Relative to the position of the parent element
+                The parent element should be set 
+                to a position of "relative"
+            */
+            position: absolute;
+            left: 300px;
         }
     </style>
 </head>
 <body>
     <div class="box green-box">
-        <div class="box red-box"></div>
-        <div class="box blue-box"></div>
+        <div class="box red-box">Red box</div>
+        <div class="box blue-box">Blue box</div>
     </div>
 </body>
 </html>
