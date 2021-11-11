@@ -152,3 +152,26 @@
 * What are semantic elements and what are some examples?
 * What is CSS grid used for? How would you describe how to use it?
 * What are the phases in the Maven build lifecycle?
+---
+* What does it mean for JavaScript to be dynamically typed?
+* Why is JavaScript called JavaScript?
+* Is JavaScript related to Java?
+* What are the 6 primary datatypes in JavaScript?
+---
+* What 3 types of functions are there?
+* What does it mean for functions to be first class citizens in JavaScript?
+* What variable scope does let and const add?
+* What is ECMAScript?
+* What version of ECMAScript was let and const added in?
+* What is function hoisting?
+* If I declare a `var` variable in a block inside a function, will it be block or function scoped?
+* If I declare a `let` or `const` variable in a block inside a function, will it be block or function scoped?
+* Why should we use let and const instead of var?
+* What is the difference between let and const?
+* For a regular or anonymous function, where does the `this` keyword inside the function get its meaning from?
+* For an arrow function, where does the `this` keyword get its meaning from?
+* What are the 3 different ways of declaring strings in JS?
+* What is type coercion?
+* What is the difference between `==` and `===`?
+* How are objects structured in JS? What do they contain?
+* How do you create an object using object literal syntax?
