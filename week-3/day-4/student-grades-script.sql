@@ -19,7 +19,8 @@ VALUES
 	('John', 'Doe', 'Freshman', 18),
 	('Jane', 'Doe', 'Senior', 22);
 	
-
+SELECT *
+FROM students;
 
 -- grades table
 DROP TABLE IF EXISTS grades;
@@ -65,7 +66,12 @@ DELETE FROM students
 WHERE student_id = 1;
 -- I cannot delete student 1, because there are two grades that belong to student 1
 -- I would need to delete the grades that belong to student 1, before I can delete student 1
+SELECT *
+FROM grades 
+WHERE student_id = 1;
 
+DELETE FROM grades 
+WHERE assignment_name = 'homework 1.1';
 
 /*
  * ACID properties: this is an acronym for the properties of transactions
