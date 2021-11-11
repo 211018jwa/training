@@ -81,6 +81,54 @@
     - [link](https://github.com/211018jwa/training/blob/main/week-4/day-1/jdbc-demo-2/pom.xml#L50-L75)
         - Specify location of class with main method
 
+## Day 2
+* Introduction to JavaScript
+    - Datatypes
+    - Why is it called JavaScript?
+    - Dynamic typing
+    - Control flow syntax
+    - Objects in JavaScript
+    - [demo and notes](https://github.com/211018jwa/training/blob/main/week-4/day-2/index.js#L3-L19)
+
+## Day 3
+* Regular function declaration
+    - [demo](https://github.com/211018jwa/training/blob/main/week-4/day-3/01_scopes_and_functions.js#L20-L25)
+* Anonymous functions
+    - [demo](https://github.com/211018jwa/training/blob/main/week-4/day-3/01_scopes_and_functions.js#L27-L41)
+* First class citizen
+    - [notes](https://github.com/211018jwa/training/blob/main/week-4/day-3/01_scopes_and_functions.js#L29-L32)
+* Var v. Let v. Const
+    - [notes](https://github.com/211018jwa/training/blob/main/week-4/day-3/01_scopes_and_functions.js#L47-L76)
+* ECMAScript
+    - [notes](https://github.com/211018jwa/training/blob/main/week-4/day-3/01_scopes_and_functions.js#L52-L57)
+* Variable scope
+    - [example #1](https://github.com/211018jwa/training/blob/main/week-4/day-3/01_scopes_and_functions.js#L78-L111)
+    - [example #2](https://github.com/211018jwa/training/blob/main/week-4/day-3/01_scopes_and_functions.js#L123-L142)
+* Const
+    - [notes and example](https://github.com/211018jwa/training/blob/main/week-4/day-3/01_scopes_and_functions.js#L144-L146)
+* Arrow function syntax
+    - [example](https://github.com/211018jwa/training/blob/main/week-4/day-3/01_scopes_and_functions.js#L152-L158)
+* Objects and their behaviors
+    - [example](https://github.com/211018jwa/training/blob/main/week-4/day-3/01_scopes_and_functions.js#L160-L173)
+* `this` keyword
+    - [notes](https://github.com/211018jwa/training/blob/main/week-4/day-3/01_scopes_and_functions.js#L167-L169)
+* Borrowing a function
+    - [example](https://github.com/211018jwa/training/blob/main/week-4/day-3/01_scopes_and_functions.js#L175-L185)
+* Arrow function (this keyword) `undefined undefined says hi!`
+    - [example](https://github.com/211018jwa/training/blob/main/week-4/day-3/01_scopes_and_functions.js#L195-L211)
+* Arrow function inside an anonymous function for an object that works
+    - [example](https://github.com/211018jwa/training/blob/main/week-4/day-3/01_scopes_and_functions.js#L213-L233)
+* Strings
+    - single quotes
+    - double quotes
+    - template literals
+    - [example](https://github.com/211018jwa/training/blob/main/week-4/day-3/01_scopes_and_functions.js#L235-L253)
+* Type Coercion
+    - == v. ===
+    - [example](https://github.com/211018jwa/training/blob/main/week-4/day-3/02_comparison.js#L8-L18)
+* Truthy and Falsy values
+    - [examples](https://github.com/211018jwa/training/blob/main/week-4/day-3/02_comparison.js#L20-L61)
+
 # Questions
 * What are self-closing tags v. non-self-closing tags?
 * What are HTML attributes? What are some examples?
