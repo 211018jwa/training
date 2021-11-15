@@ -21,7 +21,7 @@ public class Application {
 			// IN essence, because the JS code is being served from http://localhost:5500 (or http://127.0.0.1:5500), we need to configure
 			// on the backend that those are trusted sources.
 			// The backend will then tell the browser whenever the browser makes a request, that it is ok to do so, because those sources are trusted
-			config.enableCorsForOrigin("http://localhost:5500", "http://127.0.0.1:5500");
+			config.enableCorsForOrigin("http://localhost:5500", "http://127.0.0.1:5500", "http://student-management-app-1.s3-website.us-east-2.amazonaws.com");
 		});
 		
 		Logger logger = LoggerFactory.getLogger(Application.class);
