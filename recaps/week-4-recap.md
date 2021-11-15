@@ -166,6 +166,23 @@
         - [link](https://github.com/211018jwa/training/blob/main/week-4/day-4/jdbc-demo-2/src/main/java/com/revature/dao/GradeDAO.java#L37-L62)
     
 ## Day 5
+* JavaScript Event Loop
+    - [powerpoint](https://github.com/211018jwa/training/blob/main/week-4/day-5/javascript-event-loop-and-fetch-api.pdf)
+* Simple Async Example
+    - [demo](https://github.com/211018jwa/training/blob/main/week-4/day-5/simple-async-example/index.js#L1-L18)
+* JavaScript Promise
+    - [notes](https://github.com/211018jwa/training/blob/main/week-4/day-5/fetch-api-example/index.js#L15-L27)
+* Handling Promises using `.then(...)` and `.catch(...)` returned from `fetch(<URL>)`
+    - [demo](https://github.com/211018jwa/training/blob/main/week-4/day-5/fetch-api-example/index.js#L29-L49)
+* Handling Promises using async-await
+    - [demo](https://github.com/211018jwa/training/blob/main/week-4/day-5/fetch-api-example/index.js#L52-L76)
+* Pokemon Fetch Demo
+    - [link](https://github.com/211018jwa/training/tree/main/week-4/day-5/fetch-api-example)
+* Student Frontend example
+    - Features
+        - Adding students
+        - Viewing list of students
+    - [demo](https://github.com/211018jwa/training/blob/main/week-4/day-5/student-recordkeeping-frontend/index.js)
 
 # Questions
 * What are self-closing tags v. non-self-closing tags?
