@@ -32,7 +32,7 @@ CREATE TABLE grades (
 	student_id INTEGER NOT NULL,
 	
 	CONSTRAINT fk_student FOREIGN KEY(student_id)
-		REFERENCES students(student_id)
+		REFERENCES students(student_id) ON DELETE CASCADE
 );
 
 INSERT INTO grades (grade, assignment_name, student_id)

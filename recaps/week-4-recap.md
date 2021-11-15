@@ -129,6 +129,44 @@
 * Truthy and Falsy values
     - [examples](https://github.com/211018jwa/training/blob/main/week-4/day-3/02_comparison.js#L20-L61)
 
+## Day 4
+* DOM Manipulation
+    - Document object
+        - [link](https://github.com/211018jwa/training/blob/main/week-4/day-4/javascript-dom-manipulation-and-events/index.js#L2-L7)
+    - Creating an element object
+        - `document.createElement('div')`
+        - [link](https://github.com/211018jwa/training/blob/main/week-4/day-4/javascript-dom-manipulation-and-events/index.js#L9-L10)
+    - Modifying an element's content
+        - innerHTML
+        - innerText
+        - textContent
+        - [link](https://github.com/211018jwa/training/blob/main/week-4/day-4/javascript-dom-manipulation-and-events/index.js#L12-L23)
+    - Adding Element to DOM
+        - [link](https://github.com/211018jwa/training/blob/main/week-4/day-4/javascript-dom-manipulation-and-events/index.js#L25-L30)
+    - Removing Element from DOM
+        - [link](https://github.com/211018jwa/training/blob/main/week-4/day-4/javascript-dom-manipulation-and-events/index.js#L38-L43)
+    - Changing an element's attributes
+        - [link](https://github.com/211018jwa/training/blob/main/week-4/day-4/javascript-dom-manipulation-and-events/index.js#L43-L50)
+    - Modifying CSS styling of an element WITH JavaScript
+        - [link](https://github.com/211018jwa/training/blob/main/week-4/day-4/javascript-dom-manipulation-and-events/index.js#L52-L71)
+    - Arrays in JavaScript
+        - [link](https://github.com/211018jwa/training/blob/main/week-4/day-4/javascript-dom-manipulation-and-events/index.js#L79-L110)
+    - Student table DOM manipulation demo
+        - [demo](https://github.com/211018jwa/training/blob/main/week-4/day-4/javascript-dom-manipulation-and-events/index.js#L112-L148)
+    - Events & Event listeners
+        - [link](https://github.com/211018jwa/training/blob/main/week-4/day-4/javascript-dom-manipulation-and-events/index.js#L151-L193)
+* Grades example
+    - Grade Model
+        - [link](https://github.com/211018jwa/training/blob/main/week-4/day-4/jdbc-demo-2/src/main/java/com/revature/model/Grade.java)
+    - GradeController
+        - [link](https://github.com/211018jwa/training/blob/main/week-4/day-4/jdbc-demo-2/src/main/java/com/revature/controller/GradeController.java#L11-L39)
+    - Handling query parameters inside GradeService for getAllGradesByStudentId
+        - [link](https://github.com/211018jwa/training/blob/main/week-4/day-4/jdbc-demo-2/src/main/java/com/revature/service/GradeService.java#L30-L61)
+    - GradeDAO getAllGradesByStudentId
+        - [link](https://github.com/211018jwa/training/blob/main/week-4/day-4/jdbc-demo-2/src/main/java/com/revature/dao/GradeDAO.java#L37-L62)
+    
+## Day 5
+
 # Questions
 * What are self-closing tags v. non-self-closing tags?
 * What are HTML attributes? What are some examples?
