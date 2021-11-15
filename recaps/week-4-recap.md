@@ -250,3 +250,13 @@
 * What is an event listener?
 * What is the syntax for adding an event listener to an element?
 * Using the idea of adding an event listener to an element, how would you be able to print to the console the message, "button clicked" whenever you click on a button?
+---
+* What is a "callback" function?
+* What is the purpose of the JavaScript event loop?
+* What is the callback queue?
+* What is the fetch API?
+* What does the `fetch(...)` function return? (hint: starts with a P)
+* What are promises in JS?
+* What 2 states can a promise that is pending transition to?
+* How does .then(...) and .catch(...) work with these two states in handling a promise?
+* How does async-await, another way to deal with promises, work?
