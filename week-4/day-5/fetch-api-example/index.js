@@ -17,10 +17,10 @@ function onGetPokemonButtonClick_traditionalPromiseHandling() {
 
     // Definition: a promise is something that is promised to happen in the future
     //  Two states that could happen when a promise is RESOLVED:
-    //      1. The promise is "accepted" (everything went well)
+    //      1. The promise is "resolved" (everything went well)
     //      2. The promise is "rejected" (something went wrong)
     //
-    //  When a promise is "accepted", the data is passed into the callback function specified
+    //  When a promise is "resolved", the data is passed into the callback function specified
     //      inside the .then() function
     // 
     //  When a promise is "rejected", the data is passed into the callback function specified 
