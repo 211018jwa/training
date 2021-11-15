@@ -230,3 +230,23 @@
 * What is the difference between `==` and `===`?
 * How are objects structured in JS? What do they contain?
 * How do you create an object using object literal syntax?
+---
+* What is the difference between a path parameter and query parameter for an HTTP request?
+* What is the DOM?
+* What is DOM manipulation?
+* What is the `document` object in JS?
+* What is the syntax in JavaScript to create an element?
+* What three properties can we use to modify the content of an element?
+* What function can we use to add an element to the DOM?
+* Using `document.querySelector(...)`, how do you select an element with an id of `some-id`?
+* What is another function that belongs to document besides querySelector that allows you to select an element by its id?
+* Using `document.querySelectorAll(...)`, how do you select A LIST of elements with a class of `some-class`?
+* What is another function that belongs to document besides querySelectorAll that allows you to select a list of elements by a className?
+* How do you set the attributes of an element using JS?
+* How do you modify the CSS styling of elements using JS, and how does the naming convention of the CSS properties differ within JS compared to styling in a .css file?
+* How are arrays in JS different than in Java?
+* What 4 functions can we utilize to add and remove elements from a JS array?
+* What is an event?
+* What is an event listener?
+* What is the syntax for adding an event listener to an element?
+* Using the idea of adding an event listener to an element, how would you be able to print to the console the message, "button clicked" whenever you click on a button?
