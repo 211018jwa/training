@@ -65,7 +65,7 @@ Here are some ideas:
 - Run the application as a standalone JAR
 - Run the application on a docker image
 - Deploy the application to an EC2 instance on AWS
-- Use at least 1 stored procedure w/ MariaDB
+- Use at least 1 stored procedure w/ Postgres
 - Login Functionality and Roles?
     - Research about Session management (HttpSession, Javalin's Access Manager, etc)
 - Additional resources and RESTful endpoints (in addition to the clients and accounts resources in the main requirements)
