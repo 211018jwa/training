@@ -15,6 +15,8 @@ This is the training repository for the Java with Automation batch starting Octo
 | 1 | Java Basics, SDLC, Maven Introduction, Javalin, HTTP, HTML basics, Selenium basics | [link](./recaps/week-1-recap.md) |
 | 2 | Java Pillars of OOP (Inheritance, Polymorphism, Encapsulation, Abstraction), Java access and non-access modifiers, Java Collection API, Java Exceptions, Intro to Testing w/ JUnit 5 | [link](./recaps/week-2-recap.md) |
 | 3 | Java Exception Handling, SQL (Postgres), JDBC, Data Access Layer, REST | [link](./recaps/week-3-recap.md) |
+| 4 | HTML, CSS, JavaScript, DOM Manipulation, Fetch API | [link](./recaps/week-4-recap.md) |
+| 5 | AWS (RDS, EC2, S3), Selenium, Cucumber, DevOps, SonarCloud | [link](./recaps/week-5-recap.md)
 
 ---
 
