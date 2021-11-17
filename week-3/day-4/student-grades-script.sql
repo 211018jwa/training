@@ -1,3 +1,5 @@
+
+DROP TABLE IF EXISTS grades;
 DROP TABLE IF EXISTS students;
 
 -- Creating a Table called students
@@ -19,12 +21,8 @@ VALUES
 	('John', 'Doe', 'Freshman', 18),
 	('Jane', 'Doe', 'Senior', 22);
 	
-SELECT *
-FROM students;
 
--- grades table
-DROP TABLE IF EXISTS grades;
-
+-- Grades table
 CREATE TABLE grades (
 	grade_id SERIAL PRIMARY KEY,
 	grade INTEGER NOT NULL,
