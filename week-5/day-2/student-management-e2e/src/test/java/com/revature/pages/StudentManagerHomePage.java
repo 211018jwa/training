@@ -10,12 +10,16 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 /*
- * The Page Object Model is a design pattern for Selenium automation
+ * The Page Object Model is a design pattern primarily used for Selenium automation
  * 
- * That structures methods that will return webelements within a class designated for a particular page
+ * It allows us to create a class that represents as a blueprint for an object whose methods will return WebElements that represent a
+ * particular page on a website
  * 
  * This way, we have a central location in which to update the locators for a page
  * This reduces duplication and promotes code reusability and cleanliness
+ * 
+ * For example, if we have 100 tests that utilize the same element, it is better to have the code that will find that particular element be in one centralized
+ * location. For example, when the frontend is updated and the locator is no longer working, we only need to update the locator in the page object model class.
  */
 public class StudentManagerHomePage {
 
