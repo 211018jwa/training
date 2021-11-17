@@ -1,0 +1,5 @@
+Host abc
+    HostName ec2-18-219-69-82.us-east-2.compute.amazonaws.com
+    User ec2-user
+    IdentityFile /c/Users/BachTran/.ssh/student-ec2-key.pem
+    Port 22
