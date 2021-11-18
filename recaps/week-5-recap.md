@@ -95,6 +95,33 @@
         - [example](https://github.com/211018jwa/training/blob/main/week-5/day-2/student-management-e2e/src/test/java/com/revature/tests/StudentManagerTest.java)
             - Using Page Object Model design pattern
             - Utilizing JUnit 5 (Jupiter) to write and execute tests
+# Day 3
+* Introduction to BDD
+    - Approach to software development
+        - SUPERSET of TDD, "TDD is part of BDD"
+    - [notes](https://github.com/211018jwa/training/blob/main/week-5/day-3/bdd.md#behavior-driven-development)
+    - Steps of developing application features
+        - [notes](https://github.com/211018jwa/training/blob/main/week-5/day-3/bdd.md#steps-of-developing-features)
+    - Benefits of BDD
+        - [notes](https://github.com/211018jwa/training/blob/main/week-5/day-3/bdd.md#bdd-benefits)
+    - Implementing BDD
+        - [notes](https://github.com/211018jwa/training/blob/main/week-5/day-3/bdd.md#implementing-bdd)
+    - Gherkin
+        - [notes](https://github.com/211018jwa/training/blob/main/week-5/day-3/bdd.md#gherkin)
+        - Gherkin Scenarios
+            - [notes and example](https://github.com/211018jwa/training/blob/main/week-5/day-3/bdd.md#scenarios)
+    - Feature Files
+        - [notes](https://github.com/211018jwa/training/blob/main/week-5/day-3/bdd.md#terminologies)
+    - Glue code
+        - [notes](https://github.com/211018jwa/training/blob/main/week-5/day-3/bdd.md#terminologies)
+    - Test Runner
+        - [notes](https://github.com/211018jwa/training/blob/main/week-5/day-3/bdd.md#terminologies)
+    - Cucumber parameterization
+        - [notes](https://github.com/211018jwa/training/blob/main/week-5/day-3/bdd.md#cucumber-parameterization)
+* End-to-end Testing w/ Cucumber (BDD), JUnit 5 (Jupiter), and Selenium
+    - [feature file example](https://github.com/211018jwa/training/blob/main/week-5/day-3/calculator-e2e-bdd-testing/src/test/java/com/revature/features/add.feature)
+    - [glue code example](https://github.com/211018jwa/training/blob/main/week-5/day-3/calculator-e2e-bdd-testing/src/test/java/com/revature/tests/AddNumbersTest.java#L17-L57)
+    - [test runner example](https://github.com/211018jwa/training/blob/main/week-5/day-3/calculator-e2e-bdd-testing/src/test/java/com/revature/features/TestRunner.java)    
 
 # Questions
 * What is AWS RDS?
@@ -117,3 +144,21 @@
 * What is the difference between an implicit and explicit wait?
 * Which type of wait is preferable to use? Why?
 * What is the page object model, what is its benefits, and how do we use it with Selenium?
+---
+* What is BDD?
+* What is TDD?
+* What does it mean for BDD to be a superset of TDD?
+* How do we approach development of a feature for an application when utilizing BDD?
+* What are the benefits of BDD?
+* Cucumber is a BDD framework. What 3 types of files are important to write and execute tests with Cucumber?
+* What is a feature file?
+* What is a glue code/step definition file?
+* What is the purpose of the Test Runner class?
+* What plugin do we need to install to Spring Tool Suite / Eclipse for running our feature files to generate the gluecode snippets?
+* What english-like language does Cucumber use when we define the feature files?
+* What step keywords does Gherkin utilize for Scenarios?
+* Write an example of a scenario using Given ... When ... Then (And and But can also be used) for the calculator app
+* What types of parameterization does Cucumber support?
+* What is inline parameterization?
+* What is table parameterization
+* What is scenario outline parameterization?
