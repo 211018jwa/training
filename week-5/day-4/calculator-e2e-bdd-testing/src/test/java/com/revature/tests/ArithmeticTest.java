@@ -20,7 +20,7 @@ public class ArithmeticTest {
 		
 	    driver = new ChromeDriver();
 	    
-	    driver.get("http://localhost:8080/");
+	    driver.get("http://ec2-18-219-69-82.us-east-2.compute.amazonaws.com:8080/");
 	}
 
 	// Yesterday we had notes on Cucumber parameterization
@@ -112,8 +112,14 @@ public class ArithmeticTest {
 	
 	@Then("I should see an error message in the subtraction output area of {string}")
 	public void i_should_see_an_error_message_in_the_subtraction_output_area_of(String string) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		driver.switchTo().frame("subResult");
+	    WebElement addOutput = driver.findElement(By.tagName("pre"));
+	    
+	    String actual = addOutput.getText();
+	    
+	    Assertions.assertEquals(string, actual);
+	    
+	    driver.quit();
 	}
 	
 }
