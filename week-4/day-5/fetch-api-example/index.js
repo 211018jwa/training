@@ -8,7 +8,9 @@ function onGetPokemonButtonClick_traditionalPromiseHandling() {
     // By default, it will send a GET request unless we specify otherwise
     // Fetch is part of the WEB APIs, which will place a callback function into the callback queue
     // whenever the HTTP response from the server is received
-    let fetchPromise = fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonIdInputElement.value}`);
+    let fetchPromise = fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonIdInputElement.value}`, {
+        credentials: true // is what allows you to include cookies with each request to identify yourself
+    });
 
     // the fetch function will return a "Promise"
 
