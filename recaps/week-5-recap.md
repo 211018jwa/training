@@ -133,6 +133,45 @@
     - [subtract numbers feature file](https://github.com/211018jwa/training/blob/main/week-5/day-4/calculator-e2e-bdd-testing/src/test/java/com/revature/features/subtract.feature#L1-L14)
     - [gluecode file w/ step definitions](https://github.com/211018jwa/training/blob/main/week-5/day-4/calculator-e2e-bdd-testing/src/test/java/com/revature/tests/ArithmeticTest.java)
 
+## Day 5
+* Agile and DevOps
+    - DevOps helps to adhere to one of Agile's philosophies of "delivering value faster"
+    - [pdf](https://github.com/211018jwa/training/blob/main/week-5/day-5/devops.pdf)
+* DevOps
+    - Combining development and operations into one team
+    - CI/CD = Continuous integration / Continuous Delivery + Continuous Deployment
+    - [pdf](https://github.com/211018jwa/training/blob/main/week-5/day-5/devops.pdf)
+
+* Continuous Integration
+    - Merging code together frequently
+    - [DEMO CALCULATOR APP FOR TODAY](https://github.com/211018jwa/calculator-app-demo)  
+    - Github pull requests
+    - Resolving merge conflicts
+    - [`git merge` v. `git rebase`](https://levelup.gitconnected.com/the-difference-between-git-merge-and-git-rebase-8f7d1b159931)
+* Jenkins
+    - [EC2 Setup document w/ Jenkins](https://github.com/211018jwa/training/blob/main/week-5/day-5/ec2-setup.md)
+    - [Jenkins pipeline setup in pdf, scroll down](https://github.com/211018jwa/training/blob/main/week-5/day-5/devops.pdf)
+* Continuous Delivery
+    - [Github actions workflow to run tests and verify they are passing](https://github.com/211018jwa/calculator-app-demo/blob/main/.github/workflows/maven.yml)
+    - "Deploy at a push of a button"
+* Continuous Deployment
+    - Github webhook setup
+        - payload url (example): `http://ec2-18-191-213-59.us-east-2.compute.amazonaws.com:8080/github-webhook/`
+    - Jenkins automatically triggers build and deployment
+* DevOps + Testing Process
+    - [pdf, scroll towards bottom](https://github.com/211018jwa/training/blob/main/week-5/day-5/devops.pdf)
+    - Environments
+        - Development environment
+        - Test environment
+        - Pre-prod environment
+        - Prod environment
+* HttpSession Demo
+    - [demo](https://github.com/211018jwa/training/tree/main/week-5/day-5/http-session-demo)
+    - [AuthenticationController's login and logout endpoints](https://github.com/211018jwa/training/blob/main/week-5/day-5/http-session-demo/src/main/java/com/revature/controller/AuthenticationController.java#L37-L68)
+    - [protected StudentController endpoints](https://github.com/211018jwa/training/blob/main/week-5/day-5/http-session-demo/src/main/java/com/revature/controller/StudentController.java#L17-L42)
+    - [Authentication v. Authorization](https://github.com/211018jwa/training/blob/04f7b2bd474d9cc5878aea2b30c09683c637fb63/week-5/day-5/http-session-demo/src/main/java/com/revature/service/AuthorizationService.java#L6-L8)
+    - [AuthorizationService example](https://github.com/211018jwa/training/blob/04f7b2bd474d9cc5878aea2b30c09683c637fb63/week-5/day-5/http-session-demo/src/main/java/com/revature/service/AuthorizationService.java#L9-L24)
+
 # Questions
 * What is AWS RDS?
 * What is AWS EC2?
@@ -178,3 +217,17 @@
 * Refer to the `add.feature` file [at this LINK HERE](https://github.com/211018jwa/training/blob/main/week-5/day-4/calculator-e2e-bdd-testing/src/test/java/com/revature/features/add.feature#L3-L25). Note how each of the 4 scenarios (test) has the same step, `Given I am at the calculator page`. Is there a single "step definition" in the gluecode file or multiple step definitions for this?
     - The question above is to get you thinking about the fact that you can re-use the same step in multiple scenarios in your feature files. But, the step definition/implementation itself (a method) will be a single one in the gluecode file. 
     - [example here](https://github.com/211018jwa/training/blob/main/week-5/day-4/calculator-e2e-bdd-testing/src/test/java/com/revature/tests/ArithmeticTest.java#L17-L24)
+---
+* How does Agile and DevOps work together in software development?
+* There are three fundamental principles underpinning Agile combined with DevOps known as CI/CD. What is continuous integration, continuous delivery, and continuous deployment?
+* What is a Git branch?
+* When developing a new feature, should we be working directly in the `main`/`master` branch? If no, what should we do instead?
+* Why should code be constantly merged together?
+* Ensuring that the `main`/`master` branch is consistently in a "deliverable" state is important. What does it mean for it to be in a deliverable state? How can setting up a Github actions workflow like we saw during demos help to provide a metric on being "deliverable"?
+* What is Jenkins?
+* What is a Jenkins continuous delivery pipeline?
+* How can we use Jenkins to deploy an application "at the touch of a button"? Is this continuous delivery or continuous deployment?
+* How can we then completely automate Jenkins to automatically build and deploy our application whenever the `main`/`master` branch on Github changes? Is this continuous delivery or continuous deployment?
+* What is the difference between a development, test, pre-prod, and prod environment in relation to testing?
+* With regards to http sessions, how does the server identify who the client is when they send requests? What does the client need to possess and send along with the http request? (hint: starts with a c)
+* We can set an attribute such as `currentuser` to a particular http session along with an object such as a `User` object like in the http session demo. How can this help us out with regards to protecting endpoints and tracking who is logged in?
