@@ -121,7 +121,17 @@
 * End-to-end Testing w/ Cucumber (BDD), JUnit 5 (Jupiter), and Selenium
     - [feature file example](https://github.com/211018jwa/training/blob/main/week-5/day-3/calculator-e2e-bdd-testing/src/test/java/com/revature/features/add.feature)
     - [glue code example](https://github.com/211018jwa/training/blob/main/week-5/day-3/calculator-e2e-bdd-testing/src/test/java/com/revature/tests/AddNumbersTest.java#L17-L57)
-    - [test runner example](https://github.com/211018jwa/training/blob/main/week-5/day-3/calculator-e2e-bdd-testing/src/test/java/com/revature/features/TestRunner.java)    
+    - [test runner example](https://github.com/211018jwa/training/blob/main/week-5/day-3/calculator-e2e-bdd-testing/src/test/java/com/revature/features/TestRunner.java)
+
+## Day 4
+* Coding Evaluation Practice
+    - [ArrayEater solution example](https://github.com/211018jwa/training/blob/main/week-5/day-4/array-eater/src/com/revature/ArrayEater.java#L9-L63)
+* Cucumber, Selenium, and JUnit 5 breakdown
+    - [pdf](https://github.com/211018jwa/training/blob/main/week-5/day-4/breakdown-of-junit5-cucumber-selenium.pdf)
+* BDD testing demo (Using Cucumber, Selenium, and JUnit 5)
+    - [add feature file with 4 scenarios](https://github.com/211018jwa/training/blob/main/week-5/day-4/calculator-e2e-bdd-testing/src/test/java/com/revature/features/add.feature#L1-L25)
+    - [subtract numbers feature file](https://github.com/211018jwa/training/blob/main/week-5/day-4/calculator-e2e-bdd-testing/src/test/java/com/revature/features/subtract.feature#L1-L14)
+    - [gluecode file w/ step definitions](https://github.com/211018jwa/training/blob/main/week-5/day-4/calculator-e2e-bdd-testing/src/test/java/com/revature/tests/ArithmeticTest.java)
 
 # Questions
 * What is AWS RDS?
@@ -162,3 +172,9 @@
 * What is inline parameterization?
 * What is table parameterization
 * What is scenario outline parameterization?
+---
+* What is the difference between Cucumber, Selenium, and JUnit 5? How would you describe each of these technologies? How do we use them together?
+* If we have only one feature file with 4 scenarios defined in it (scenario 1 has 5 steps, scenario 2 has 4 steps, scenario 3 has 4 steps, and scenario 4 has 3 steps), and then use our TestRunner file and run as JUnit test, how many tests does JUnit consider that as?
+* Refer to the `add.feature` file [at this LINK HERE](https://github.com/211018jwa/training/blob/main/week-5/day-4/calculator-e2e-bdd-testing/src/test/java/com/revature/features/add.feature#L3-L25). Note how each of the 4 scenarios (test) has the same step, `Given I am at the calculator page`. Is there a single "step definition" in the gluecode file or multiple step definitions for this?
+    - The question above is to get you thinking about the fact that you can re-use the same step in multiple scenarios in your feature files. But, the step definition/implementation itself (a method) will be a single one in the gluecode file. 
+    - [example here](https://github.com/211018jwa/training/blob/main/week-5/day-4/calculator-e2e-bdd-testing/src/test/java/com/revature/tests/ArithmeticTest.java#L17-L24)
