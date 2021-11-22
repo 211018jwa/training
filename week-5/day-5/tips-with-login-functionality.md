@@ -4,7 +4,8 @@
 
 ```javascript
 fetch('http://localhost:8080/someendpoint', {
-    credentials: true // make sure to have the credentials: true option
+    method: 'GET',
+    credentials: 'include' // make sure to have the credentials: 'include' option
 })
 ```
 
