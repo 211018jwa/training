@@ -1,0 +1,142 @@
+/* CSS reset: "resetting" the default margin and padding to 0 
+and changing the box-sizing behavior to border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "navigation navigation navigation navigation"
+        "showcase showcase showcase top"
+        "showcase showcase showcase bottom"
+}
+
+.home-nav {
+    grid-area: navigation;
+}
+
+.home-nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+}
+
+.home-nav a {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+}
+
+.home-nav a:hover {
+    background-color: gray;
+    color: gold;
+}
+
+/*
+    Showcase
+*/
+.showcase {
+    grid-area: showcase;
+    min-height: 400px;
+    background: url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.showcase .showcase-text {
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* rgba(0, 0, 0, <opacity>) <- opacity 0 to 1 (opposite of transparency) */
+    padding: 40px;
+}
+
+.showcase .showcase-text .btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: gray;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.showcase .showcase-text .btn:hover {
+    background-color: gold;
+}
+
+/*
+    Top boxes
+*/
+.top-box-a {
+    grid-area: top;
+    text-align: center;
+    padding: 20px;
+}
+
+.top-box-b {
+    grid-area: bottom;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+/* Utilizing media queries */
+@media(max-width: 1100px) {
+    .home-nav a {
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 900px) {
+    .home-nav a {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 700px) {
+    .home-nav a {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 500px) {
+    .home-nav a {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 700px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+            "navigation"
+            "showcase"
+            "showcase"
+            "top"
+            "bottom"
+    }
+
+    .top-box-a, .top-box-b {
+        padding: 20px;
+    }
+
+    .home-nav ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        list-style: none;
+    }
+    
+}
