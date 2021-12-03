@@ -47,3 +47,54 @@
     - [media query examples](https://github.com/211018jwa/training/blob/main/week-7/day-4/responsive-design/style.css#L95-L142)
 - [Singleton design pattern demo](https://github.com/211018jwa/training/blob/main/week-7/day-4/singleton-design-pattern-demo/src/com/revature/demo/Singleton.java#L18-L36)
 - [Factory design pattern demo](https://github.com/211018jwa/training/blob/main/week-7/day-4/factory-design-pattern-demo/src/com/revature/demo/AnimalFactory.java#L3-L27)
+
+# QC Study Guide
+QC: Monday, December 6th
+
+Topics: Week 4, 5, 7
+- Week 4: Client side technologies (HTML, CSS, JavaScript)
+    - [questions](https://github.com/211018jwa/training/blob/main/recaps/week-4-recap.md#questions)
+- Week 5: AWS, Selenium, Cucumber, and DevOps
+    - [questions](https://github.com/211018jwa/training/blob/main/recaps/week-5-recap.md#questions)
+- Week 7: Testing concepts, Responsive web design, Java design patterns, Java lambdas, functional interfaces, comparable interfaces, comparable interface, comparator class
+
+## Week 7 Questions
+* What is SonarCloud?
+* What is the process in setting up SonarCloud code scanning for a repository?
+* What is Github Actions?
+* What does the build.yml file do in the context of Github Actions?
+* What do we set up inside the pom.xml for SonarCloud?
+* What is the purpose of the JaCoCo Maven plugin?
+* Summarizing the different testing mindset "bullet points", what is the mindset that a tester should have?
+* **What are the phases in the testing lifecycle?**
+* What is the difference between verification and validation?
+* What are some of the activities involved with verification/static testing?
+* What two sub-categories of testing is functional testing composed of?
+* What are the 4 specific types of tests that make up the testing pyramid?
+* What is whitebox testing?
+* What is blackbox testing?
+* Categorize unit, integration, E2E, and UAT by whether they are whitebox or blackbox for EACH
+* What is a positive test?
+* What is an example of a positive test?
+* What is a negative test?
+* What is an example of a negative test?
+* What is exploratory testing?
+* What is exhaustive testing? Is it feasible? How should a tester approach testing instead?
+* Describe the test design strategies of `equivalence partitioning` and `boundary testing`
+* What does re-testing mean?
+* What is regression testing? Why is regression testing important?
+* What is smoke testing? Why should smoke testing be performed before doing regression testing?
+* How does regression testing relate with the objectives of DevOps?
+* What is sanity testing?
+* What is manual testing? Do you typically need a formal structure when doing manual testing or do you just randomly play around with the application?
+* What is test automation?
+* What is non-functional testing? What two subcategories did we cover?
+* What is performance testing and what subcategories does it have?
+* What is the purpose of usability testing?
+* What is a defect/bug?
+* What should a tester do when they find a defect?
+* What are some of the fields that should be contained on a defect report?
+* What levels of severity can defects have?
+* What levels of priority can defects have?
+* How is severity and priority different?
+* What are the phases of the defect lifecycle?
