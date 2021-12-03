@@ -59,12 +59,16 @@ Topics: Week 4, 5, 7
 - Week 7: Testing concepts, Responsive web design, Java design patterns, Java lambdas, functional interfaces, comparable interfaces, comparable interface, comparator class
 
 ## Week 7 Questions
+
+## SonarCloud
 * What is SonarCloud?
 * What is the process in setting up SonarCloud code scanning for a repository?
 * What is Github Actions?
 * What does the build.yml file do in the context of Github Actions?
 * What do we set up inside the pom.xml for SonarCloud?
 * What is the purpose of the JaCoCo Maven plugin?
+
+## Testing Concepts
 * Summarizing the different testing mindset "bullet points", what is the mindset that a tester should have?
 * **What are the phases in the testing lifecycle?**
 * What is the difference between verification and validation?
@@ -98,3 +102,14 @@ Topics: Week 4, 5, 7
 * What levels of priority can defects have?
 * How is severity and priority different?
 * What are the phases of the defect lifecycle?
+
+## Responsive Web Design
+* What is responsive design? How does it help us accommodate different types of devices users may be using?
+* What is a media query?
+* What is the syntax for media queries?
+
+## Design patterns
+* What is the Singleton design pattern?
+* How would you create a class that follows the Singleton design pattern?
+* What is the Factory design pattern?
+* How would you implement the factory design pattern?
