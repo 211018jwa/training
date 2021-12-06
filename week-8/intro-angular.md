@@ -45,8 +45,6 @@ It is important to distinguish between AngularJS and what is more commonly known
 Whenever you look up documentation and tutorails on how to accomplish something in Angular, please distinguish between AngularJS and Angular 2+. Whatever tutorial you find for AngularJS WILL NOT work for Angular 2+.
 
 ## Revisiting Node.js
-Remember in week 3 that I said Node.js was a runtime environment for JavaScript, intended for backend applications, such as REST API servers written using JavaScript. Angular, however, is a frontend framework for developing single page applications which run in the browser. 
-
 So, why do we need Node.js? Node is required for obtaining and running all of the build and development tools that we need to use, such as
 - npm (node package manager): very important in helping us manage dependencies, similar to one of the purposes of Maven
 - npm provides us with access to Angular CLI (command line interface), which allows us to easily create new Angular projects, modules, components, pipes, services, etc. Angular CLI also helps us to run tests, to build our project, and also to start up a development server
@@ -83,3 +81,5 @@ Once Angular CLI is installed, we simply run `ng new <project name>` in order to
 
 ## Webpack
 Webpack is a powerful module bundler that will bundle all of the JavaScript modules and required dependencies together into a single file to be executed by the browser. This is what Angular utilizes behind the scenes when we actually build our project. It will bundle together all of the component HTML files, CSS files, and JavaScript (TypeScript gets converted into JS) into a single HTML file, a single CSS file, and a small number of JS files that are linked to this HTML file through the `<script>` tag.
+
+To build an Angular project, use the `npm run build` command in the command line.
