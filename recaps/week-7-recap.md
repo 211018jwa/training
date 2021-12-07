@@ -48,6 +48,23 @@
 - [Singleton design pattern demo](https://github.com/211018jwa/training/blob/main/week-7/day-4/singleton-design-pattern-demo/src/com/revature/demo/Singleton.java#L18-L36)
 - [Factory design pattern demo](https://github.com/211018jwa/training/blob/main/week-7/day-4/factory-design-pattern-demo/src/com/revature/demo/AnimalFactory.java#L3-L27)
 
+## Day 5
+- [Functional interface demo + notes](https://github.com/211018jwa/training/blob/main/week-7/day-5/lambdas-and-functional-interfaces/src/com/revature/demo/Predicate.java#L3-L18)
+- [Lambda example](https://github.com/211018jwa/training/blob/main/week-7/day-5/lambdas-and-functional-interfaces/src/com/revature/demo/Application.java#L45-L59)
+- [Comparable interface demo](https://github.com/211018jwa/training/blob/main/week-7/day-5/comparable-and-comparator-demo/src/com/revature/demo/Person.java#L20-L44)
+- [Comparator interface](https://github.com/211018jwa/training/blob/main/week-7/day-5/comparable-and-comparator-demo/src/com/revature/demo/Application.java#L46-L60)
+- [Closure example + notes](https://github.com/211018jwa/training/blob/main/week-7/day-5/closures/index.js#L22-L53)
+- [Call and apply example](https://github.com/211018jwa/training/blob/main/week-7/day-5/call-apply-bind/index.js#L24-L35)
+- [Bind example](https://github.com/211018jwa/training/blob/main/week-7/day-5/call-apply-bind/index.js#L37-L53)
+- Instantiating JavaScript objects
+    - [Object literals](https://github.com/211018jwa/training/blob/main/week-7/day-5/object-oriented-programming-js/index.js#L14-L23)
+    - [Function constructor](https://github.com/211018jwa/training/blob/main/week-7/day-5/object-oriented-programming-js/index.js#L25-L58)
+    - [ES6 Class](https://github.com/211018jwa/training/blob/main/week-7/day-5/object-oriented-programming-js/index.js#L94-L127)
+    - [ES6 Class w/ getters/setters](https://github.com/211018jwa/training/blob/main/week-7/day-5/object-oriented-programming-js/index.js#L130-L180)
+- Prototypal Inheritance
+    - [Function Constructor's prototype property](https://github.com/211018jwa/training/blob/main/week-7/day-5/object-oriented-programming-js/index.js#L52-L58)
+    - [`__proto__ property`](https://github.com/211018jwa/training/blob/main/week-7/day-5/object-oriented-programming-js/index.js#L83-L90)
+
 # QC Study Guide
 QC: Monday, December 6th
 
@@ -113,3 +130,21 @@ Topics: Week 4, 5, 7
 * How would you create a class that follows the Singleton design pattern?
 * What is the Factory design pattern?
 * How would you implement the factory design pattern?
+
+## Java
+* What is a functional interface?
+* What are functional interfaces typically used to create?
+* What are lambdas?
+* What method do we need to implement within a class that implements the Comparable interface?
+* When this method returns 0, what does it mean?
+* When this method returns a negative number, what does it mean?
+* When this method returns a positive number, what does it mean?
+* What is the purpose of the Comparator interface?
+
+## JavaScript
+* What is a closure?
+* What is the purpose of call, apply, and bind?
+* What 3 ways are there to construct an object?
+* What is prototypal inheritance?
+* When an object is created using a function constructor, what property that belongs to the function constructor does the object inherit from?
+* How do we use `__proto__` to make an object inherit from another object?
