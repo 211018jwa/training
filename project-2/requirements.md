@@ -20,10 +20,7 @@ Project 2 will be a group-based, full-stack application that you will be designi
             - Minimum of 80% service layer code coverage
         - Use Mockito as necessary in order to mock the DAO layer, etc.
     - Selenium Tests (End-to-end (E2E) tests)
-        - For 3 person teams
-            - You should have at least 2 Selenium tests
-        - For 4 person teams
-            - You should have at least 4 Selenium tests
+        - You should have at least 4 Selenium tests
         - E2E tests don't contribute to code coverage since we are automating actual browser actions and not running tests that are directly interacting with our code like in the case of integration or unit tests
 - Frontend
     - You should be using **Angular**
