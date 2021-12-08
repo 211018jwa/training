@@ -1,0 +1,4 @@
+:host {
+  grid-area: two-way;
+  border: 2px solid cyan;
+}

@@ -1,0 +1,145 @@
+<!--
+  Directives, is a concept in Angular, that allow us to manipulate the DOM. Directives are
+  essentially markers that you place on elements that tells Angular to change their appearance,
+  behavior, or layout on the DOM
+
+  1. Structural directives: used to manipulate the structure of the page itself. * preceeds the
+  actual directive keyword
+
+    - ngIf: allows us to toggle the displaying of elements on the DOM based on a
+            boolean expression. If true, it is displayed, if false, it is not displayed
+    - ngFor: used to repeat part of the HTML template for each item in an array
+    - ngSwitch: similar to switch statements in other programming languages, but this is used
+            to selectively display certain elements based on a certain case being met
+-->
+<h2 class="is-size-3">ngIf Demo</h2>
+<!-- *ngIf="<boolean expression>" -->
+<p *ngIf="paragraphElementDisplayed">This paragraph element can be toggled on and off</p>
+<button (click)="onButtonClick()">Toggle element</button>
+
+<hr>
+
+<h2 class="is-size-3">ngFor Demo</h2>
+<table>
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>weight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pokemon of pokemonData">
+      <td>{{ pokemon.id }}</td>
+      <td>{{ pokemon.name }}</td>
+      <td>{{ pokemon.weight }}</td>
+      <td><img [src]="pokemon.sprites.front_default"></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2 class="is-size-3">ngSwitch Demo</h2>
+
+<button (click)="currentTableToBeDisplayed = 'pending'">Pending</button>
+<button (click)="currentTableToBeDisplayed = 'denied'">Denied</button>
+<button (click)="currentTableToBeDisplayed = 'approved'">Approved</button>
+
+<div [ngSwitch]="currentTableToBeDisplayed">
+  <!-- fake pending table reimbursements -->
+  <table *ngSwitchCase="'pending'">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Reimbursement Type</th>
+        <th>Reimbursement Status</th>
+        <th>Reimbursement Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Food</td>
+        <td>Pending</td>
+        <td>Business travel food expenditure</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Lodging</td>
+        <td>Pending</td>
+        <td>Business travel accommodation</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Lodging</td>
+        <td>Pending</td>
+        <td>Employee of the month vacation reward</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- fake denied table reimbursements -->
+  <table *ngSwitchCase="'denied'">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Reimbursement Type</th>
+        <th>Reimbursement Status</th>
+        <th>Reimbursement Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>10</td>
+        <td>Food</td>
+        <td>Denied</td>
+        <td>Dinner with Client</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>Lodging</td>
+        <td>Denied</td>
+        <td>Business travel accommodation</td>
+      </tr>
+      <tr>
+        <td>30</td>
+        <td>Lodging</td>
+        <td>Denied</td>
+        <td>Vacation rewards</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- fake approved table reimbursements -->
+  <table *ngSwitchCase="'approved'">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Reimbursement Type</th>
+        <th>Reimbursement Status</th>
+        <th>Reimbursement Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>100</td>
+        <td>Food</td>
+        <td>Approved</td>
+        <td>Teambuilding dining</td>
+      </tr>
+      <tr>
+        <td>101</td>
+        <td>Lodging</td>
+        <td>Approved</td>
+        <td>Team building holiday party accommodations</td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>Lodging</td>
+        <td>Approved</td>
+        <td>Travel to client</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

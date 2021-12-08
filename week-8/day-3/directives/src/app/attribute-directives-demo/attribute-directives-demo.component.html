@@ -1,0 +1,43 @@
+<!-- Attribute directives are used to change the attributes of elements.
+In particular, Angular's built-in attribute directives are either used
+to change the class attribute or the style attribute
+
+  So, we have two types:
+  1. ngClass directive
+    - [ngClass] is used for adding or removing CSS classes from an element
+      The difference between using the class attribute directly and using the ngClass directive
+      is that ngClass enables dynamic application of different classes
+    - The value that comes after [ngClass]="..." can be
+        * a string [ngClass]="'first second'"
+        * an Array [ngClass]="['first', 'second']"
+        * Object [ngClass]="{ 'is-active': toggleIsActive }"
+  2. ngStyle directive
+    - ngStyle allows us to dynamically change the values of various CSS properties
+      (ex. color, background-color, font-size, etc.)
+-->
+
+<!-- ngClass demo -->
+<h2 class="is-size-3">ngClass Demo</h2>
+<!-- toggleIsActive is a variable over on the component class file (.ts file)-->
+<button (click)="toggleIsActive = true">Open Modal</button>
+<div class="modal" [ngClass]="{ 'is-active': toggleIsActive }"> <!-- when toggleIsActive is true,
+the element has the is-active class applied. When toggleIsActive is false,
+the element has the is-active class not applied -->
+
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <!-- Any other Bulma elements you want -->
+  </div>
+  <button (click)="toggleIsActive = false" class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<hr>
+
+<h2 class="is-size-3">ngStyle Demo</h2>
+<p [ngStyle]="{'color': pColor, 'font-size': fontSize}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, quibusdam!</p>
+
+<button (click)="pColor = 'red'">Red</button>
+<button (click)="pColor = 'blue'">Blue</button>
+<button (click)="pColor = 'green'">Green</button>
+<button (click)="fontSize = '36px'">Change Font to 36px</button>
+<button (click)="fontSize = '24px'">Change Font to 24px</button>
