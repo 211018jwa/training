@@ -35,6 +35,39 @@
     - `templateUrl`
     - `styleUrls`
 
+## Day 2
+- TypeScript Crash Course
+    - [Declaring a variable with a type](https://github.com/211018jwa/training/blob/main/week-8/day-2/typescript-crash-course/index.ts#L34)
+    - [Type inferencing](https://github.com/211018jwa/training/blob/main/week-8/day-2/typescript-crash-course/index.ts#L39)
+    - [Declaring variable without type or assigning value](https://github.com/211018jwa/training/blob/main/week-8/day-2/typescript-crash-course/index.ts#L44)
+        - type `any`
+    - [Explicitly giving a variable type any](https://github.com/211018jwa/training/blob/main/week-8/day-2/typescript-crash-course/index.ts#L49)
+    - [Function examples](https://github.com/211018jwa/training/blob/main/week-8/day-2/typescript-crash-course/index.ts#L80-L94)
+        - typed parameters
+        - return type
+    - [Variable with specific object type](https://github.com/211018jwa/training/blob/main/week-8/day-2/typescript-crash-course/index.ts#L127)
+    - [Interface example](https://github.com/211018jwa/training/blob/main/week-8/day-2/typescript-crash-course/index.ts#L129-L146)
+    - [Array examples](https://github.com/211018jwa/training/blob/main/week-8/day-2/typescript-crash-course/index.ts#L148-L158)
+    - [Class example](https://github.com/211018jwa/training/blob/main/week-8/day-2/typescript-crash-course/index.ts#L160-L172)
+    - [Access modifiers](https://github.com/211018jwa/training/blob/main/week-8/day-2/typescript-crash-course/index.ts#L174-L203)
+    - [Class property shorthand](https://github.com/211018jwa/training/blob/main/week-8/day-2/typescript-crash-course/index.ts#L213-L223)
+    - [Generics](https://github.com/211018jwa/training/blob/main/week-8/day-2/typescript-crash-course/index.ts#L225-L249)
+    - [Decorators](https://github.com/211018jwa/training/blob/main/week-8/day-2/typescript-crash-course/index.ts#L251-L276)
+- One way databinding
+    - [types of one-way databinding](https://github.com/211018jwa/training/blob/main/week-8/day-2/one-way-databinding-app/src/app/password-generator/password-generator.component.html#L1-L7)
+    - [one-way databinding syntaxes](https://github.com/211018jwa/training/blob/main/week-8/day-2/one-way-databinding-app/src/app/password-generator/password-generator.component.html#L10-L28)
+    - [password generator component demo](https://github.com/211018jwa/training/tree/main/week-8/day-2/one-way-databinding-app/src/app/password-generator)
+        - [template](https://github.com/211018jwa/training/blob/main/week-8/day-2/one-way-databinding-app/src/app/password-generator/password-generator.component.html#L30-L41)
+        - [component class](https://github.com/211018jwa/training/blob/main/week-8/day-2/one-way-databinding-app/src/app/password-generator/password-generator.component.ts#L8-L34)
+    - [image viewer component demo](https://github.com/211018jwa/training/tree/main/week-8/day-2/one-way-databinding-app/src/app/password-generator)
+    - [poke component demo](https://github.com/211018jwa/training/tree/main/week-8/day-2/one-way-databinding-app/src/app/poke)
+        - [Pokemon interface file](https://github.com/211018jwa/training/blob/main/week-8/day-2/one-way-databinding-app/src/app/Pokemon.ts)
+        - [importing the Pokemon interface](https://github.com/211018jwa/training/blob/main/week-8/day-2/one-way-databinding-app/src/app/poke/poke.component.ts#L3)
+        - [Using variable of `Pokemon` type](https://github.com/211018jwa/training/blob/main/week-8/day-2/one-way-databinding-app/src/app/poke/poke.component.ts#L12-L16)
+    - Component lifecycle
+        - [notes](https://github.com/211018jwa/training/blob/main/week-8/day-2/component-lifecycle.md)
+        - [demo](https://github.com/211018jwa/training/blob/main/week-8/day-2/one-way-databinding-app/src/app/demo/demo.component.ts#L10-L28)
+
 # Questions
 * What JavaScript engine does Chrome use for executing JS in the browser?
 * How can we run JS outside of the browser?
