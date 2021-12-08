@@ -88,5 +88,23 @@
 * What files make up a component? Describe the purpose of these 3 files
 * What file is the @Component decorator located inside of and what 3 important properties does it have?
 * Which of the 3 @Component properties is useful for helping us figure out what tag we need to use to display a component within another component?
+* What is the parent-most component in an Angular app?
 ---
-
+* What is the syntax for declaring a variable of a particular type in TypeScript?
+* If we declare and assign some value to the variable on the same line without specifying the type explicitly of the variable, what type will that variable be? (Type inferencing)
+* If we declare a variable with the `any` type, what does any mean?
+* What would a function in TypeScript look like in terms of the parameters?
+* How do you specify a return type for a TypeScript function?
+* What return type should you specify if you create a function that doesn't return anything?
+* What is the syntax declare a variable with the type being a string array?
+* What is the purpose of an interface in TypeScript?
+* What is the shorthand syntax for a TypeScript class where we can define properties and have the constructor be able to assign values to those properties without needing to type everything out explicitly?
+* What access modifiers does TypeScript have?
+* If we need to declare a variable with a type being an object with a massive number of properties or complicated nested structures, especially if other variables will be using that same type, what is the best practice in creating a "type" for it?
+---
+* What types of one-way databinding are there?
+* What is the purpose of string interpolation, and what is the syntax?
+* What is the purpose of property binding, and what is the syntax?
+* What is the purpose of event binding, and what is the syntax?
+* What lifecycle hooks are part of the component lifecycle?
+* What is the component lifecycle?
