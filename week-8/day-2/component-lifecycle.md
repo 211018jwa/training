@@ -1,0 +1,8 @@
+# Component Lifecycle
+Whenever you are utilizing an Angular application, chances are you are navigating to different "pages". This means that certain component are needed at certain times and not at other times. So, components are essentially created and destroyed. During the lifetime of a component, it goes through many different phases collectively known as the component lifecycle. There exists special functions known as `lifecycle hooks` which will be invoked whenever certain conditions are met during the lifetime of a component. We could potentially utilize these lifecycle hooks to perform useful actions with our components.
+
+- `constructor`: Actually instantiates and populates the initial properties (typically through dependency injection in the case of Angular). This lifecycle hook is only called once.
+- `ngOnChanges()`: Whenever the input properties of a component change (properties decorated with the @Input() decorator), this method is called. Therefore, this method could be called multiple times during the lifetime of a component.
+- `ngOnInit()`: called ONE TIME when the component is first initialized. The difference between constructor and ngOnInit is that ngOnInit is called when the component is actually already rendered to the DOM
+- `ngDoCheck()`: called immediately after ngOnChanges() and ngOnInit() so that we can implement our own custom actions for change detection
+- `ngOnDestroy()`: called before Angular destroys a component

@@ -1,0 +1,13 @@
+<h1 id="main-heading">Welcome to {{ title }}</h1>
+
+<app-password-generator></app-password-generator>
+<app-image-viewer></app-image-viewer>
+
+<!-- *ngIf is one example of a structural directive
+If the expression for *ngIf evaluates to false, then whatever element the
+*ngIf directive is applied to is not displayed on the page
+If the expression is true, then the element is actually displayed-->
+<app-demo *ngIf="appDemoDisplayed"></app-demo>
+<button id="app-demo-toggle" (click)="onToggleButtonClick()">Toggle app-demo component</button>
+
+<app-poke></app-poke>

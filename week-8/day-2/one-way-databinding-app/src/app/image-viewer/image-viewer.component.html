@@ -1,0 +1,9 @@
+<h1>Component #2</h1>
+<h2>Display image based on link</h2>
+<label>Image link</label>
+<div>
+  <input (input)="onImageLinkInputChange($event)" type="text">
+</div>
+<div>
+  <img [src]="imageLink">
+</div>

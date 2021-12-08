@@ -1,0 +1,21 @@
+<h1>Pokemon Component</h1>
+<table>
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>weight</th>
+      <th>image</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{ pokemonToBeDisplayed.id }}</td>
+      <td>{{ pokemonToBeDisplayed.name }}</td>
+      <td>{{ pokemonToBeDisplayed.weight }}</td>
+      <td><img [src]="pokemonToBeDisplayed.sprites.front_default" /></td>
+    </tr>
+  </tbody>
+</table>
+
+

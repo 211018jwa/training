@@ -1,0 +1,17 @@
+:host {
+  display: grid;
+  grid-template-areas:
+    "h h"
+    "pg iv"
+    "demo toggle-button"
+    "pokemon pokemon";
+}
+
+#main-heading {
+  grid-area: h;
+  text-align: center;
+}
+
+#app-demo-toggle {
+  grid-area: toggle-button;
+}
