@@ -68,6 +68,28 @@
         - [notes](https://github.com/211018jwa/training/blob/main/week-8/day-2/component-lifecycle.md)
         - [demo](https://github.com/211018jwa/training/blob/main/week-8/day-2/one-way-databinding-app/src/app/demo/demo.component.ts#L10-L28)
 
+## Day 3
+- Review of one-way databinding
+    - [Component demo](https://github.com/211018jwa/training/tree/main/week-8/day-3/two-way-databinding/src/app/one-way-db-demo)
+- Two-way databinding
+    - Setup process
+        1. [Import FormsModule into module .ts file](https://github.com/211018jwa/training/blob/main/week-8/day-3/two-way-databinding/src/app/app.module.ts#L3)
+        2. [Add FormsModule to the imports property of @NgModule decorator](https://github.com/211018jwa/training/blob/main/week-8/day-3/two-way-databinding/src/app/app.module.ts#L19)
+    - [Component demo](https://github.com/211018jwa/training/tree/main/week-8/day-3/two-way-databinding/src/app/two-way-db-demo)
+        - [`[(ngModel)]` syntax](https://github.com/211018jwa/training/blob/main/week-8/day-3/two-way-databinding/src/app/two-way-db-demo/two-way-db-demo.component.html#L4)
+        - [linked to variable in component class](https://github.com/211018jwa/training/blob/main/week-8/day-3/two-way-databinding/src/app/two-way-db-demo/two-way-db-demo.component.ts#L10)
+- Directives
+    - [General notes](https://github.com/211018jwa/training/blob/main/week-8/day-3/directives/src/app/structural-directives-demo/structural-directives-demo.component.html#L2-L4)
+    - Structural directives
+        - [3 types (notes)](https://github.com/211018jwa/training/blob/main/week-8/day-3/directives/src/app/structural-directives-demo/structural-directives-demo.component.html#L9-L13)
+        - [*ngIf demo](https://github.com/211018jwa/training/blob/main/week-8/day-3/directives/src/app/structural-directives-demo/structural-directives-demo.component.html#L15-L18)
+        - [*ngFor demo](https://github.com/211018jwa/training/blob/main/week-8/day-3/directives/src/app/structural-directives-demo/structural-directives-demo.component.html#L22-L39)
+        - [*ngSwitch demo](https://github.com/211018jwa/training/blob/main/week-8/day-3/directives/src/app/structural-directives-demo/structural-directives-demo.component.html#L43-L145)
+    - Attribute Directives
+        - [2 types (notes)](https://github.com/211018jwa/training/blob/main/week-8/day-3/directives/src/app/attribute-directives-demo/attribute-directives-demo.component.html#L1-L16)
+        - [`[ngClass]` demo](https://github.com/211018jwa/training/blob/main/week-8/day-3/directives/src/app/attribute-directives-demo/attribute-directives-demo.component.html#L19-L32)
+        - [`[ngStyle]` demo](https://github.com/211018jwa/training/blob/main/week-8/day-3/directives/src/app/attribute-directives-demo/attribute-directives-demo.component.html#L36-L43)
+
 # Questions
 * What JavaScript engine does Chrome use for executing JS in the browser?
 * How can we run JS outside of the browser?
