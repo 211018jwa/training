@@ -1,0 +1,11 @@
+<h1>App Component</h1>
+<div id="app-border">
+  <app-addition-history [h]="history"></app-addition-history>
+  <!-- We are passing the data from the history variable in this component (APP component)
+  to the app addition history component's h attribute
+  We created the h attribute and had it associated with a variable within the app addition history
+  component using the @Input('h') decorator -->
+  <app-addition (add)="onAddition($event)"></app-addition>
+
+</div>
+

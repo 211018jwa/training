@@ -1,0 +1,6 @@
+<h1>Display Pokemon Image App</h1>
+<label>Specify The Pokemon You want to see (id)</label>
+<input type="number" [(ngModel)]="pokemonId">
+<button (click)="getPokemonImageLink()">See Pokemon</button>
+
+<img [src]="imageLink">

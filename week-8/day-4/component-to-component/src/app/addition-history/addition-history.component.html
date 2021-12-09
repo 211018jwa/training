@@ -1,0 +1,16 @@
+<h1>Addition History Component</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry #</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let entry of history; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ entry }}</td>
+    </tr>
+  </tbody>
+</table>
