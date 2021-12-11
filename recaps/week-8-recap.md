@@ -112,6 +112,7 @@
             - [link](https://github.com/211018jwa/training/blob/main/week-8/day-4/component-to-component/src/app/app.component.html#L3)
 - [Poke Service example](https://github.com/211018jwa/training/blob/main/week-8/day-4/service-demo/src/app/poke.service.ts)
     - [HttpClient being injected into PokeService](https://github.com/211018jwa/training/blob/main/week-8/day-4/service-demo/src/app/poke.service.ts#L13-L15)
+    - [HttpClientModule imported into AppModule](https://github.com/211018jwa/training/blob/main/week-8/day-4/service-demo/src/app/app.module.ts#L15)
     - [PokeService being injected into AppComponent](https://github.com/211018jwa/training/blob/main/week-8/day-4/service-demo/src/app/app.component.ts#L18-L20)
 - [Creating a routing module](https://github.com/211018jwa/training/blob/main/week-8/day-4/routing-demo/src/app/app-routing.module.ts)
     - [Specifying routes and guards](https://github.com/211018jwa/training/blob/main/week-8/day-4/routing-demo/src/app/app-routing.module.ts#L10-L12)
@@ -178,3 +179,27 @@
 * What is the purpose of *ngSwitch and what is its syntax?
 * What are the 2 attribute directives?
 * What is the purpose of each of the 2 attribute directives?
+---
+* What is a pipe?
+* What are some examples of built-in Angular pipes?
+* What is the purpose of a pipe?
+* What 2 decorators are used to facilitate component to component communication?
+* Is `@Input` used to pass data from a parent component to child component, or is it child component to parent component?
+* Is `@Output` used to pass data from a parent component to child component, or is it child component to parent component?
+* Is `@Input` associated with property binding or event binding?
+* Is `@Output` associated with property binding or event binding?
+* How do you create a service using Angular CLI?
+* What decorator does a service have?
+* What does it mean to have `@Injectable` on a service?
+* What does it mean for these services to be singletons?
+* What is dependency injection?
+* What do we need to do to inject a service into a component?
+* What is the name of the service that our custom created services will need to have injected into them in order to send HTTP Requests in Angular?
+* How do we get HttpClient working? What module needs to be imported into our App Module?
+* What is the purpose of routing in Angular? How does this relate to the idea of Angular being a single page application framework?
+* Where do we specify routes in the Angular application?
+* What is the reason you might use a route guard?
+* What is a subject?
+* What is an observable?
+* What is the difference between an observable and promise?
+* What does HttpClient return for HTTP requests being made?
