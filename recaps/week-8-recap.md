@@ -130,3 +130,15 @@
 * What is the purpose of event binding, and what is the syntax?
 * What lifecycle hooks are part of the component lifecycle?
 * What is the component lifecycle?
+* What type of HTML element is two-way databinding used with?
+* How does two-way databinding help to simplify the process of coupling the value of input elements with a variable in the component class?
+* What is the syntax for two-way databinding?
+* What is the process to set up two way databinding?
+* What two types of directives are there?
+* What are the 3 structural directives?
+* What is the purpose of *ngIf?
+* What goes in the quotation marks for `*ngIf=""`?
+* What is the purpose of *ngFor? What does the syntax look like?
+* What is the purpose of *ngSwitch and what is its syntax?
+* What are the 2 attribute directives?
+* What is the purpose of each of the 2 attribute directives?
