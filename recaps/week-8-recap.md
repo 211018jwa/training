@@ -91,6 +91,7 @@
         - [`[ngStyle]` demo](https://github.com/211018jwa/training/blob/main/week-8/day-3/directives/src/app/attribute-directives-demo/attribute-directives-demo.component.html#L36-L43)
 
 ## Day 4
+- [POWERPOINT DIAGRAMS](https://github.com/211018jwa/training/blob/main/week-8/day-4/powerpoint.pdf)
 - [Pipe demo angular project](https://github.com/211018jwa/training/tree/main/week-8/day-4/pipe-demo)
     - [Built in currency pipe example](https://github.com/211018jwa/training/blob/main/week-8/day-4/pipe-demo/src/app/app.component.html#L2)
     - [MphToKphPipe pipe example](https://github.com/211018jwa/training/blob/main/week-8/day-4/pipe-demo/src/app/mph-to-kph.pipe.ts)
@@ -123,7 +124,7 @@
         - [PokemonViewerComponent](https://github.com/211018jwa/training/blob/main/week-8/day-4/subject-demo/src/app/pokemon-viewer/pokemon-viewer.component.ts#L21-L23)
         - [PokemonHistoryComponent](https://github.com/211018jwa/training/blob/main/week-8/day-4/subject-demo/src/app/pokemon-history/pokemon-history.component.ts#L21-L23)
         - [JsonViewerComponent](https://github.com/211018jwa/training/blob/main/week-8/day-4/subject-demo/src/app/json-viewer/json-viewer.component.ts#L17-L19)
-
+- [Notes on Observables v. Subjects](https://github.com/211018jwa/training/blob/main/week-8/day-4/rxjs-observables-and-subjects.md)
 
 # Questions
 * What JavaScript engine does Chrome use for executing JS in the browser?
