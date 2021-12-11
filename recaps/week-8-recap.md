@@ -90,6 +90,41 @@
         - [`[ngClass]` demo](https://github.com/211018jwa/training/blob/main/week-8/day-3/directives/src/app/attribute-directives-demo/attribute-directives-demo.component.html#L19-L32)
         - [`[ngStyle]` demo](https://github.com/211018jwa/training/blob/main/week-8/day-3/directives/src/app/attribute-directives-demo/attribute-directives-demo.component.html#L36-L43)
 
+## Day 4
+- [Pipe demo angular project](https://github.com/211018jwa/training/tree/main/week-8/day-4/pipe-demo)
+    - [Built in currency pipe example](https://github.com/211018jwa/training/blob/main/week-8/day-4/pipe-demo/src/app/app.component.html#L2)
+    - [MphToKphPipe pipe example](https://github.com/211018jwa/training/blob/main/week-8/day-4/pipe-demo/src/app/mph-to-kph.pipe.ts)
+        - [Using the pipe in the HTML template](https://github.com/211018jwa/training/blob/main/week-8/day-4/pipe-demo/src/app/app.component.html#L10)
+- Component to Component Communication
+    - 3 components
+        - App component
+        - Addition component
+        - Addition history component
+    - `@Output` decorator in Addition component
+        - [link](https://github.com/211018jwa/training/blob/main/week-8/day-4/component-to-component/src/app/addition/addition.component.ts#L14-L15)
+        - [emitting the custom `add` event](https://github.com/211018jwa/training/blob/main/week-8/day-4/component-to-component/src/app/addition/addition.component.ts#L27)
+    - Utilizing event binding from parent component on `add` custom event created using `@Output` decorator in Addition component
+        - [link](https://github.com/211018jwa/training/blob/main/week-8/day-4/component-to-component/src/app/app.component.html#L8)
+    - `@Input` decorator in Addition History Component
+        - [link](https://github.com/211018jwa/training/blob/main/week-8/day-4/component-to-component/src/app/addition-history/addition-history.component.ts#L10-L11)
+        - Utilizing property binding to pass information into the Addition History Component using the custom `h` property created using `@Input`
+            - [link](https://github.com/211018jwa/training/blob/main/week-8/day-4/component-to-component/src/app/app.component.html#L3)
+- [Poke Service example](https://github.com/211018jwa/training/blob/main/week-8/day-4/service-demo/src/app/poke.service.ts)
+    - [HttpClient being injected into PokeService](https://github.com/211018jwa/training/blob/main/week-8/day-4/service-demo/src/app/poke.service.ts#L13-L15)
+    - [PokeService being injected into AppComponent](https://github.com/211018jwa/training/blob/main/week-8/day-4/service-demo/src/app/app.component.ts#L18-L20)
+- [Creating a routing module](https://github.com/211018jwa/training/blob/main/week-8/day-4/routing-demo/src/app/app-routing.module.ts)
+    - [Specifying routes and guards](https://github.com/211018jwa/training/blob/main/week-8/day-4/routing-demo/src/app/app-routing.module.ts#L10-L12)
+    - [Trainer Auth guard example](https://github.com/211018jwa/training/blob/main/week-8/day-4/routing-demo/src/app/trainer-auth.guard.ts)
+    - [Associate Auth guard example](https://github.com/211018jwa/training/blob/main/week-8/day-4/routing-demo/src/app/associate-auth.guard.ts)
+- [Subject Demo project](https://github.com/211018jwa/training/tree/main/week-8/day-4/subject-demo)
+    - [Poke Service](https://github.com/211018jwa/training/blob/main/week-8/day-4/subject-demo/src/app/poke.service.ts)
+    - [Publishing data to subject when received](https://github.com/211018jwa/training/blob/main/week-8/day-4/subject-demo/src/app/poke.service.ts#L23)
+    - 3 Components subscribing to the subject
+        - [PokemonViewerComponent](https://github.com/211018jwa/training/blob/main/week-8/day-4/subject-demo/src/app/pokemon-viewer/pokemon-viewer.component.ts#L21-L23)
+        - [PokemonHistoryComponent](https://github.com/211018jwa/training/blob/main/week-8/day-4/subject-demo/src/app/pokemon-history/pokemon-history.component.ts#L21-L23)
+        - [JsonViewerComponent](https://github.com/211018jwa/training/blob/main/week-8/day-4/subject-demo/src/app/json-viewer/json-viewer.component.ts#L17-L19)
+
+
 # Questions
 * What JavaScript engine does Chrome use for executing JS in the browser?
 * How can we run JS outside of the browser?
