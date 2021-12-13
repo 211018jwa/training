@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/context
+						http://www.springframework.org/schema/context/spring-context.xsd">
+		
+		
+		<!-- A Spring Bean is an object that the Spring Framework IoC container instantiates and manages for us -->
+		<!--  Spring beans are stored in an inversion of control container -->
+		<!--  Here we provide configurations for what beans we want inside of our container -->
+		<bean id="myReimbDao" class="com.revature.dao.ReimbursementDao">
+		</bean>
+		
+		<bean id="myReimbService" class="com.revature.service.ReimbursementService">
+		
+			<!-- Setter injection -->
+			<property name="reimbursementDao" ref="myReimbDao" /> 
+			<!-- For Setter injection, the name attribute of the XML property tag corresponds with the setter method name
+			setReimbursementDao -> get rid of set -> ReimbursementDao -> lowercase the first letter -> reimbursementDao -->
+			<!-- The ref attribute corresponds to the name of the bean we want to pass into the setter -->
+		</bean>
+		
+		<bean id="myUserDao" class="com.revature.dao.UserDao"></bean>
+		
+		<bean id="myUserService" class="com.revature.service.UserService">
+			
+			<!--  Constructor injection -->
+			<constructor-arg ref="myUserDao" />
+			
+		</bean>
+						
+</beans>
