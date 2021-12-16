@@ -122,3 +122,59 @@
 - Spring Test Demos (Gradify Spring Boot Demo)
     - [Dao Unit Tests](https://github.com/211018jwa/training/tree/main/week-9/day-3/gradify-sb/src/test/java/com/revature/gradifysb/daounittests)
     - [AuthenticationController Integration tests](https://github.com/211018jwa/training/blob/main/week-9/day-3/gradify-sb/src/test/java/com/revature/gradifysb/integrationtests/AuthenticationControllerTest.java)
+
+# Questions
+
+## Hibernate
+* What is Hibernate?
+* What is an ORM (Object relational mapper)?
+* What is the Java Persistence API? How is Hibernate related to this API?
+* What class and interfaces are associated w/ Hibernate?
+* What are some general JPA annotations used with Hibernate to map entities?
+* What are entities?
+* What are some of the mapping annotations?
+* What are the 3 object states? Describe each of them
+* What is Automatic dirty checking?
+* What does flushing a session do?
+* What are the different ways to retrieve data with Hibernate?
+* What is HQL and JPQL?
+* What is lazy loading v. eager loading?
+* Is @ManyToOne lazily or eagerly loaded?
+* Is @OneToMany lazily or eagerly loaded?
+* Is @OneToOne lazily or eagerly loaded?
+* Is @ManyToMany lazily or eagerly loaded?
+* What is a proxy object?
+
+## Spring
+* What is inversion of control (IoC)?
+* What is dependency injection?
+* What is an inversion of control container?
+* What are two examples of inversion of control containers in Spring?
+* What are the most important differences between BeanFactory and ApplicationContext? Which one is used nowadays?
+* What is a Spring Bean?
+* What is the difference between Spring Modules and Spring Projects?
+* What 3 ways are there to configure Spring Beans?
+* What is Java based configuration and the syntax for it? What two annotations are important for Java based configuration?
+* What is annotation based configuration? What are the 4 "stereotype" annotations used for annotation based configuration?
+* What are the 3 types of dependency injection in Spring?
+* What is the purpose of the @Autowired annotation? What 3 things can we place this annotation on top of?
+* What is the difference between `@Controller` and `@RestController`?
+* What is the purpose of `@ResponseBody`?
+* What is the purpose of `@RequestBody`?
+* What is the purpose of `@PathVariable`?
+* What is the purpose of `@RequestParam`?
+* What 6 annotations can we place onto methods to map them to endpoints?
+* What is Spring Boot?
+* What does it mean for Spring boot to be `opinionated` and to have `convention over configuration`?
+* What is one way to generate a Spring boot project?
+* What is the application.properties file in a Spring Boot application?
+* Inside of the DAO layer, what object do we use to perform database related operations? (it is annotated with @PersistenceContext)
+* What is the purpose of the `@Transactional` annotation?
+
+## Spring Test
+* What is the difference between unit and integration tests?
+* What is an H2 database? Why do we use an H2 database for testing?
+* Where should the properties file with the settings for the H2 database go (for testing purposes)?
+* What is the purpose of the `@SpringBootTest` annotation? Why do we need this annotation for integration tests?
+* Why might we need to use the `@DirtiesContext` annotation while doing DAO tests and integration tests?
+* What is MockMvc?
