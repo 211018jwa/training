@@ -16,7 +16,11 @@ This is the training repository for the Java with Automation batch starting Octo
 | 2 | Java Pillars of OOP (Inheritance, Polymorphism, Encapsulation, Abstraction), Java access and non-access modifiers, Java Collection API, Java Exceptions, Intro to Testing w/ JUnit 5 | [link](./recaps/week-2-recap.md) |
 | 3 | Java Exception Handling, SQL (Postgres), JDBC, Data Access Layer, REST | [link](./recaps/week-3-recap.md) |
 | 4 | HTML, CSS, JavaScript, DOM Manipulation, Fetch API | [link](./recaps/week-4-recap.md) |
-| 5 | AWS (RDS, EC2, S3), Selenium, Cucumber, DevOps, SonarCloud | [link](./recaps/week-5-recap.md)
+| 5 | AWS (RDS, EC2, S3), Selenium, Cucumber, DevOps, SonarCloud | [link](./recaps/week-5-recap.md) |
+| 6 | Gradify Application Demo (Thanksgiving week) | |
+| 7 | Testing notes, Java Singleton/Factory design patterns, Comparable, Comparator, Responsive Web Design, and JavaScript OOP | [link](./recaps/week-7-recap.md) |
+| 8 | Angular | [link](./recaps/week-8-recap.md) |
+| 9 | Hibernate, Spring, Spring Boot, Spring Test (integration testing) | [link](./recaps/week-9-recap.md) |
 
 ---
 
