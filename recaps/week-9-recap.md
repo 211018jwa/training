@@ -87,3 +87,38 @@
     - [ReimbursementService configuration w/ Setter injection](https://github.com/211018jwa/training/blob/main/week-9/day-1/spring-java-config-demo/src/main/java/com/revature/config/BeanConfig.java#L29-L37)
     - [UserService configuration w/ Constructor injection](https://github.com/211018jwa/training/blob/main/week-9/day-1/spring-java-config-demo/src/main/java/com/revature/config/BeanConfig.java#L44-L49)
     - [Requesting ReimbursementService and UserService beans](https://github.com/211018jwa/training/blob/main/week-9/day-1/spring-java-config-demo/src/main/java/com/revature/demo/Main.java#L12-L28)
+
+## Day 2
+- [Spring Web Annotations](https://github.com/211018jwa/training/blob/main/week-9/day-2/spring-web-annotations.md#spring-web-annotations)
+    - Utilized with Controller beans
+- Spring Boot Application
+    - Generating a Spring Boot application using Spring Initializr
+        - [link](https://start.spring.io/)
+        - Dependencies to add
+            - Spring Data JPA
+            - Spring Web
+            - Postgres Driver
+    - [application.properties](https://github.com/211018jwa/training/blob/main/week-9/day-2/spring-boot-demo/src/main/resources/application.properties)
+    - [Controller examples](https://github.com/211018jwa/training/tree/main/week-9/day-2/spring-boot-demo/src/main/java/com/revature/springbootdemo/controller)
+    - [User entity example](https://github.com/211018jwa/training/blob/main/week-9/day-2/spring-boot-demo/src/main/java/com/revature/springbootdemo/model/User.java)
+    - [UserService example](https://github.com/211018jwa/training/blob/main/week-9/day-2/spring-boot-demo/src/main/java/com/revature/springbootdemo/service/UserService.java)
+    - [UserDao example](https://github.com/211018jwa/training/blob/main/week-9/day-2/spring-boot-demo/src/main/java/com/revature/springbootdemo/dao/UserDao.java)
+- [EntityManager notes](https://github.com/211018jwa/training/blob/main/week-9/day-2/spring-boot-demo/src/main/java/com/revature/springbootdemo/dao/UserDao.java#L19-L31)
+    - `@PersistenceContext` annotation
+    - `@Transactional` annotation
+
+## Day 3
+- [Angular Review](https://github.com/211018jwa/training/blob/main/week-9/day-3/angular-review.pdf)
+- [Spring Stereotype Annotations](https://github.com/211018jwa/training/blob/main/week-9/day-3/spring-stereotype-annotations.md)
+    - `@Component`
+    - `@Service`
+    - `@Repository`
+    - `@Controller`
+- [Spring Test Notes](https://github.com/211018jwa/training/blob/main/week-9/day-3/spring-test.md)
+- Gradify Spring Boot Demo
+    - [Dao layer](https://github.com/211018jwa/training/tree/main/week-9/day-3/gradify-sb/src/main/java/com/revature/gradifysb/dao)
+    - [User Service](https://github.com/211018jwa/training/blob/main/week-9/day-3/gradify-sb/src/main/java/com/revature/gradifysb/service/UserService.java)
+    - [Authentication Controller](https://github.com/211018jwa/training/blob/main/week-9/day-3/gradify-sb/src/main/java/com/revature/gradifysb/controller/AuthenticationController.java)
+- Spring Test Demos (Gradify Spring Boot Demo)
+    - [Dao Unit Tests](https://github.com/211018jwa/training/tree/main/week-9/day-3/gradify-sb/src/test/java/com/revature/gradifysb/daounittests)
+    - [AuthenticationController Integration tests](https://github.com/211018jwa/training/blob/main/week-9/day-3/gradify-sb/src/test/java/com/revature/gradifysb/integrationtests/AuthenticationControllerTest.java)
