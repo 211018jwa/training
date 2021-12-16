@@ -11,6 +11,7 @@ Application Context: responsible for instantiating, storing, and configuring (wi
 - We want to have these layers wired together through the application context (IoC container), so that we can perform integration testing
 
 # Annotations that go on top of Test classes
-- `@SpringBootTest`: loads an entire application context (the entire app, just like when you run the Spring Boot application normally)
+- `@SpringBootTest`: Loads an entire application context (the entire app, just like when you run the Spring Boot application normally)
 - `@WebMvcTest`: Loads only the necessary beans that the controllers depend on (such as the service beans, dao beans, etc.)
-- `@DataJpaTest`: loads only the configuration for JPA. We can use this when doing DAO Unit tests
+- `@DataJpaTest`: Loads only the configuration for Spring Data JPA. We can use this when doing DAO Unit tests (particularly when using Spring Data repositories, which have not been covered yet)
+- `@DirtiesContext`: Allows us to indicate that the application context needs to be reloaded (for example, so that we can start with a brand new database for each test)
