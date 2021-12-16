@@ -77,3 +77,36 @@ public void setUp() {
     session.close();
 }
 ```
+
+## Using a Mock HttpSession
+It is even possible to mock an HttpSession in order to test endpoints that require a user to be logged in
+
+```java
+@Test
+public void testLoginStatus_loggedIn() throws Exception {
+    /*
+     * Arrange
+     */
+    UserRole fakeUserRole = new UserRole("trainer");
+    fakeUserRole.setId(1);
+
+    User fakeUser = new User("Bach", "Tran", "bach_tran", "password", fakeUserRole);
+    fakeUser.setId(1);
+
+    MockHttpSession session = new MockHttpSession();
+    session.setAttribute("currentuser", fakeUser);
+
+    /*
+     * ACT
+     */
+    MockHttpServletRequestBuilder builder = MockMvcRequestBuilders.get("/loginstatus").session(session);
+
+    String expectedJsonUser = mapper.writeValueAsString(fakeUser);
+
+    this.mvc.perform(builder)
+        .andExpect(MockMvcResultMatchers.status().is(200))
+        .andExpect(MockMvcResultMatchers.content().json(expectedJsonUser));
+
+}
+```
+
