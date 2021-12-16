@@ -20,7 +20,7 @@ import com.revature.gradifysb.model.User;
 import com.revature.gradifysb.service.AssignmentService;
 
 @RestController
-@CrossOrigin(origins = { "http://localhost:5500" }, allowCredentials = "true")
+@CrossOrigin(originPatterns = "*", allowCredentials = "true")
 public class AssignmentController {
 
 	@Autowired

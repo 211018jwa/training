@@ -20,7 +20,7 @@ import com.revature.gradifysb.service.UserService;
 @RestController // @Controller as well
 // What does @RestController add beyond what we have with @Controller?
 // @ResponseBody
-@CrossOrigin(origins = { "http://localhost:5500" }, allowCredentials = "true")
+@CrossOrigin(originPatterns = "*", allowCredentials = "true")
 public class AuthenticationController {
 
 	@Autowired
