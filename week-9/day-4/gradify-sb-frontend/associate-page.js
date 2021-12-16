@@ -4,11 +4,16 @@ window.addEventListener('load', async () => {
         method: 'GET'
     });
 
-    let data = await res.json();
+    if (res.status === 200) {
+        let data = await res.json();
 
-    console.log(data);
+        console.log(data);
+    
+        document.querySelector('#json-user-output').innerHTML = JSON.stringify(data);
+    } else {
+        document.querySelector('#json-user-output').innerHTML = 'NOT LOGGED IN';
+    }
 
-    document.querySelector('#json-user-output').innerHTML = JSON.stringify(data);
 });
 
 document.querySelector('#logout-btn').addEventListener('click', async () => {
