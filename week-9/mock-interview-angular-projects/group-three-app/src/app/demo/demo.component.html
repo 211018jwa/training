@@ -1,0 +1,25 @@
+<p>demo works!</p>
+<p>MyVar: {{ myVar }}</p>
+<input type="text" [(ngModel)]="myVar">
+
+<!-- [] square brackets, {} curly braces, () parentheses, `` backticks, '' single quotes,
+"" double quotes -->
+<!-- Two types of databinding:
+  1. one-way databinding
+    - {{}}: from component class to the html template (String interpolation)
+    - []: property binding (setting attributes of elements to some variable in the component class)
+    - (): event binding
+  2. two-way databinding
+    - make change in template, changes in .ts file, vice versa
+    - input element
+-->
+
+<!-- Directives
+  1. Structural: Reshape the DOM in certain ways
+    - ngIf
+    - ngFor
+    - ngSwitch
+  2. Attribute
+    - ngStyle: used to programmatically apply styling to an element
+    - ngClass: used to programmatically apply classes to an element
+-->

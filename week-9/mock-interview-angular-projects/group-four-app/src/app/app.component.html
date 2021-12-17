@@ -1,0 +1,17 @@
+<h1 *ngIf="h1IsDisplayed">Hello world</h1>
+<button (click)="onToggleButtonClick()">Toggle Hello World Heading</button>
+
+<div *ngFor="let s of strings">
+  <app-demo-component [someVar]="s"></app-demo-component>
+  <hr>
+</div>
+
+<!-- Structural directives:
+1. ngSwitch: change views of webpage based on switch variable equaling a particular switch case
+2. ngFor: repeat elements that were listed
+3. ngIf: gets rid of subviews or displays subviews
+-->
+
+<div *ngFor="let pokemon of pokemons">
+  <app-pokemon-card [poke]="pokemon"></app-pokemon-card>
+</div>

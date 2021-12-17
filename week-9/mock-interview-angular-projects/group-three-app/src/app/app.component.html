@@ -1,0 +1,21 @@
+<h1 *ngIf="h1ShouldBeDisplayed">Hello World</h1>
+<button (click)="toggleBooleanValue()">Toggle H1 Element ON/OFF</button>
+
+<!-- ngIf
+      ngFor
+      ngSwitch
+-->
+<div>
+  <ng-container *ngFor="let n of [1, 2, 3, 4]">
+    <hr>
+    <h2>Component {{ n }}</h2>
+    <app-demo></app-demo>
+  </ng-container>
+</div>
+
+<hr>
+
+<h1>Pokemon Stuff</h1>
+<ng-container *ngFor="let p of pokemons">
+  <app-pokemon-card [pokemon]="p"></app-pokemon-card>
+</ng-container>
