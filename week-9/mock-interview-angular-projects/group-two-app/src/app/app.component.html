@@ -1,0 +1,39 @@
+<h1>Application Name: {{ title }}</h1>
+
+<hr>
+<app-demo [myVar2]="title"></app-demo>
+<hr>
+<app-demo [myVar2]="'another string'"></app-demo>
+<hr>
+<app-demo [myVar2]="'yet another'"></app-demo>
+<hr>
+<app-demo [myVar2]="'last string'"></app-demo>
+
+<!-- Databinding
+2 types:
+  1. One-way databinding
+    - String Interpolation {{}}
+    - Property binding []
+    - Event binding ()
+  2. Two-way databinding
+-->
+<hr>
+<h1>Pokemon</h1>
+<hr>
+
+<ng-container *ngFor="let poke of pokemons">
+  <app-pokemon-card [pokemon]="poke"></app-pokemon-card>
+</ng-container>
+
+
+
+<!-- Directives -->
+<!--
+  1. Structural directives
+    - ngIf
+    - ngFor
+    - ngSwitch
+  2. Attribute directives
+    - ngClass
+    - ngStyle
+-->

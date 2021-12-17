@@ -1,0 +1,38 @@
+<h1>Application Name: {{ title }}</h1>
+<div *ngIf="shouldBeDisplayed">
+  <img [src]="imageLink">
+</div>
+
+<button (click)="btnClick()">Click me</button>
+<!--
+  Databinding
+  One-way databinding
+    1. String interpolation
+    2. Event binding
+    3. [] Property binding
+  Two-way databinding
+-->
+
+<!--
+  Directives
+  1. Component
+  2. Attribute directive
+    - ngClass
+    - ngStyle
+    - ngModel
+  3. Structural directive
+    - ngIf: if statement
+    creates or disposes subviews
+    - ngFor
+    - ngSwitch
+-->
+<hr>
+
+<!-- ng-container is a dummy element
+that is ignored in the actual DOM
+so it's an invisible element
+typeically used for ngFor-->
+<ng-container *ngFor="let poke of pokemons">
+  <app-pokemon-card [pokemon]="poke"></app-pokemon-card>
+</ng-container>
+
