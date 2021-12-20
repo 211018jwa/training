@@ -123,6 +123,23 @@
     - [Dao Unit Tests](https://github.com/211018jwa/training/tree/main/week-9/day-3/gradify-sb/src/test/java/com/revature/gradifysb/daounittests)
     - [AuthenticationController Integration tests](https://github.com/211018jwa/training/blob/main/week-9/day-3/gradify-sb/src/test/java/com/revature/gradifysb/integrationtests/AuthenticationControllerTest.java)
 
+## Day 4
+- [Aspect Oriented Programming - AOP](https://github.com/211018jwa/training/blob/main/week-9/day-4/spring-aop-notes.md#aop---aspect-oriented-programming)
+- [AspectJ and Spring AOP](https://github.com/211018jwa/training/blob/main/week-9/day-4/spring-aop-notes.md#aop-ecosystem)
+- Important Terminology
+    - [Aspect](https://github.com/211018jwa/training/blob/main/week-9/day-4/spring-aop-notes.md#aop---aspect-oriented-programming)
+    - [Join Point](https://github.com/211018jwa/training/blob/main/week-9/day-4/spring-aop-notes.md#join-points)
+    - [Point Cut](https://github.com/211018jwa/training/blob/main/week-9/day-4/spring-aop-notes.md#pointcut)
+    - [Advice](https://github.com/211018jwa/training/blob/main/week-9/day-4/spring-aop-notes.md#advice)
+        - `@Before`
+        - `@After`
+        - `@AfterReturning`
+        - `@AfterThrowing`
+        - `@Around`
+- [Creating Around advice for Associate endpoint security](https://github.com/211018jwa/training/blob/main/week-9/day-4/gradify-sb/src/main/java/com/revature/gradifysb/aspect/SecurityAspect.java#L38-L68)
+    - [Annotations at top of Aspect class](https://github.com/211018jwa/training/blob/main/week-9/day-4/gradify-sb/src/main/java/com/revature/gradifysb/aspect/SecurityAspect.java#L15-L17)
+    - [Creating custom @Associate annotation](https://github.com/211018jwa/training/blob/main/week-9/day-4/gradify-sb/src/main/java/com/revature/gradifysb/annotation/Associate.java)
+
 # Questions
 
 ## Hibernate
@@ -178,3 +195,13 @@
 * What is the purpose of the `@SpringBootTest` annotation? Why do we need this annotation for integration tests?
 * Why might we need to use the `@DirtiesContext` annotation while doing DAO tests and integration tests?
 * What is MockMvc?
+
+## Spring AOP
+- What is the purpose of AOP?
+- What does AOP stand for?
+- What is an Aspect?
+- What is advice?
+- What is a pointcut expression?
+- What is a join point?
+- What type of advice are there?
+- What is the the most powerful advice?
