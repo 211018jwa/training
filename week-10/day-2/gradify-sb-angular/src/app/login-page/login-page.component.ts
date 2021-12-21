@@ -26,45 +26,51 @@ export class LoginPageComponent implements OnInit {
   }
 
   checkIfLoggedIn() {
-    this.loginService.checkLoginStatus().subscribe((res) => {
-      if (res.status === 200) {
-        let body = <User> res.body;
+    this.loginService.checkLoginStatus().subscribe({
+    next: (res) => {
+        if (res.status === 200) {
+          let body = <User> res.body;
 
-        if (body.role.role === 'associate') {
-          // navigate to associate route
-          this.router.navigate(['associate']);
+          if (body.role.role === 'associate') {
+            // navigate to associate route
+            this.router.navigate(['associate']);
+          }
+
+          if (body.role.role === 'trainer') {
+            // navigate to trainer route
+            this.router.navigate(['trainer']);
+          }
         }
-
-        if (body.role.role === 'trainer') {
-          // navigate to trainer route
-          this.router.navigate(['trainer']);
-        }
-      }
-    },
-    (err) => {
-
+      },
+    error: (err) => {
+      console.log(err);
+    }
     });
   }
 
   onButtonClick() {
-    this.loginService.login(this.username, this.password).subscribe((res) => {
-      if (res.status === 200) {
-        let body = <User> res.body;
+    this.loginService.login(this.username, this.password).subscribe(
+      {
+        next: (res) => {
+          if (res.status === 200) {
+            let body = <User> res.body;
 
-        if (body.role.role === 'associate') {
-          // navigate to associate route
-          this.router.navigate(['associate']);
+            if (body.role.role === 'associate') {
+              // navigate to associate route
+              this.router.navigate(['associate']);
+            }
+
+            if (body.role.role === 'trainer') {
+              // navigate to trainer route
+              this.router.navigate(['trainer']);
+            }
+          }
+        },
+        error: (err) => {
+          this.errorMessage = err.error;
         }
-
-        if (body.role.role === 'trainer') {
-          // navigate to trainer route
-          this.router.navigate(['trainer']);
-        }
-
       }
-    }, (err) => {
-      this.errorMessage = err.error;
-    });
+    );
   }
 
 }

@@ -20,6 +20,14 @@ export class AssociatePageComponent implements OnInit {
 
   ngOnInit(): void {
 
+    this.loginService.checkLoginStatus().subscribe({
+      error: (err) => {
+        if (err.status === 401) {
+          this.router.navigate(['']);
+        }
+      }
+    })
+
     this.as.getAssignments().subscribe((res) => {
       if (res.status === 200) {
         let body = <Assignment[]> res.body;
