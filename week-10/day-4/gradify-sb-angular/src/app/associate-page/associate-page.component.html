@@ -1,0 +1,33 @@
+<p>associate-page works!</p>
+
+<button (click)="onButtonClick()">Logout</button>
+
+<h1>{{ dailyQuote }}</h1>
+<table>
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>assignment name</th>
+      <th>author first name</th>
+      <th>author last name</th>
+      <th>grade</th>
+      <th>status</th>
+      <th>grader first name</th>
+      <th>grader last name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let a of assignments">
+      <tr>
+        <td>{{ a.id }}</td>
+        <td>{{ a.assignmentName }}</td>
+        <td>{{ a.author.firstName }}</td>
+        <td>{{ a.author.lastName }}</td>
+        <td>{{ a.grade }}</td>
+        <td>{{ a.status.status }}</td>
+        <td>{{ a.resolver ? a.resolver.firstName : '-' }}</td>
+        <td>{{ a.resolver ? a.resolver.lastName : '-' }}</td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>

@@ -1,0 +1,17 @@
+:host {
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+div {
+  margin-top: 10px;
+}
+
+#error-message {
+  color: red;
+}
