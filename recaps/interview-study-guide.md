@@ -123,7 +123,13 @@ Other topics that are good to look over as well:
 * What is behavior driven development (BDD)?
 
 # Cucumber
-
+* What is a BDD framework?
+* Benefits of BDD?
+* Why use Cucumber + Selenium together w/ JUnit 5 instead of only Selenium + Cucumber?
+* What is Gherkin?
+* What type of file is Gherkin written inside of?
+* What three types of files do you need to deal with when writing BDD based tests?
+* What types of parameterization does Cucumber support?
 
 # Selenium
 * What is Selenium?
@@ -148,3 +154,11 @@ Other topics that are good to look over as well:
 * CI/CD: Continuous integration v. continuous delivery v. continuous deployment?
 * What is Jenkins?
 * What is a Jenkins pipeline?
+
+# REST
+* What is REST?
+* By convention, what are the purposes of GET, POST, PUT, PATCH, DELETE?
+* How are resources represented in REST?
+* What are the REST URI conventions?
+* What are the 6 constraints of REST?
+* What are some of the best practices for REST API design?
