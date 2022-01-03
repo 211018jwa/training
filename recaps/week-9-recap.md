@@ -170,23 +170,29 @@
 * What are the most important differences between BeanFactory and ApplicationContext? Which one is used nowadays?
 * What is a Spring Bean?
 * What is the difference between Spring Modules and Spring Projects?
+* What are some examples of Spring Modules?
+* What are some examples of Spring Projects? Which very important one did we use for P2 and are using for P3?
 * What 3 ways are there to configure Spring Beans?
 * What is Java based configuration and the syntax for it? What two annotations are important for Java based configuration?
 * What is annotation based configuration? What are the 4 "stereotype" annotations used for annotation based configuration?
 * What are the 3 types of dependency injection in Spring?
 * What is the purpose of the @Autowired annotation? What 3 things can we place this annotation on top of?
+* What is Spring Boot?
+* What does it mean for Spring boot to be `opinionated` and to have `convention over configuration`?
+* What is one way to generate a Spring boot project?
+* What is the application.properties file in a Spring Boot application?
+* Inside of the DAO layer, what object do we use to perform database related operations using JPA? (it is annotated with @PersistenceContext)
+* What is the purpose of the `@Transactional` annotation?
+
+## Spring Web
 * What is the difference between `@Controller` and `@RestController`?
 * What is the purpose of `@ResponseBody`?
 * What is the purpose of `@RequestBody`?
 * What is the purpose of `@PathVariable`?
 * What is the purpose of `@RequestParam`?
 * What 6 annotations can we place onto methods to map them to endpoints?
-* What is Spring Boot?
-* What does it mean for Spring boot to be `opinionated` and to have `convention over configuration`?
-* What is one way to generate a Spring boot project?
-* What is the application.properties file in a Spring Boot application?
-* Inside of the DAO layer, what object do we use to perform database related operations? (it is annotated with @PersistenceContext)
-* What is the purpose of the `@Transactional` annotation?
+* What design pattern does Spring Web use for controllers?
+* What is the role of the DispatcherServlet?
 
 ## Spring Test
 * What is the difference between unit and integration tests?
