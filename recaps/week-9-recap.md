@@ -179,9 +179,13 @@
 * What is the purpose of the @Autowired annotation? What 3 things can we place this annotation on top of?
 * What is Spring Boot?
 * What does it mean for Spring boot to be `opinionated` and to have `convention over configuration`?
+* How does Spring Boot's autoconfiguration work?
 * What is one way to generate a Spring boot project?
 * What is the application.properties file in a Spring Boot application?
+
+## Spring Data
 * Inside of the DAO layer, what object do we use to perform database related operations using JPA? (it is annotated with @PersistenceContext)
+* What is a PersistenceContext?
 * What is the purpose of the `@Transactional` annotation?
 
 ## Spring Web
