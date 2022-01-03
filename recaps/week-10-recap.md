@@ -37,6 +37,7 @@
 * What is Lombok?
 * Spring Data abstracts away Hibernate when we build our DAO layer. Why is this useful and what is the process we follow to do so?
 * What is JpaRepository?
+* What can we do once we create an interface that extends JpaRepository?
 * What is the purpose of the test plan document?
 * What is the purpose of the test case design document? What does it contain?
 * What is the purpose of the requirements traceability matrix?
