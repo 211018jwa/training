@@ -15,6 +15,13 @@ Other topics that are good to look over as well:
 
 **Please reference the RevaturePro calendar as that will contain an overview of topics covered throughout training. Do additional research online on possible interview questions with regards to each topic so that you can be as prepared as possible. Don't use this study guide as your sole resource. This is only designed to help guide you in the interview preparation process**
 
+# Useful External Resources (Also shared in Discord)
+- [Selenium Interview Topics](https://www.youtube.com/watch?v=nlR4zYB2PpM&list=PLUDwpEzHYYLtEENXAFbVPrLeLNHM6OLk7)
+- [Common SQL Query Interview Questions](https://www.youtube.com/watch?v=DMBtRCvords&list=PLUDwpEzHYYLu1Sxfwtvbr8kzd7uNd8jIS&index=1)
+- [Scrum Interview Questions](https://www.simplilearn.com/tutorials/agile-scrum-tutorial/scrum-master-interview-questions)
+- [Testing Interview Questions](https://www.edureka.co/blog/interview-questions/software-testing-interview-questions/)
+- [Java Interview Questions](https://www.edureka.co/blog/interview-questions/java-interview-questions/)
+
 # Soft Skills
 * Tell me about yourself
 * Tell me about the projects you've worked on
